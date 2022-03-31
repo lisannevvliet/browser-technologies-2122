@@ -1,11 +1,14 @@
-// Load Node.js modules.
-var express = require('express')
+import express from 'express'
+import { engine } from 'express-handlebars'
 
-// Initialise Express.
-var app = express()
+const app = express()
 
-// Render static files.
-app.use(express.static('public'))
+app.engine('handlebars', engine())
+app.set('view engine', 'handlebars')
+app.set('views', './views')
 
-// Set the port the website will run on.
-app.listen(8080)
+app.get('/', (req, res) => {
+    res.render('home')
+})
+
+app.listen(3000)
