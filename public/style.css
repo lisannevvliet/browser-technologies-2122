@@ -1,0 +1,11 @@
+.display-flex {
+    display: flex;
+}
+
+.display-flex div {
+    text-align: center;
+}
+
+.display-flex div input {
+    display: block;
+}
