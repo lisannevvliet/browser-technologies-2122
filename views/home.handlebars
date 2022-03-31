@@ -3,10 +3,10 @@
     <h2>Student</h2>
     
     <label for="naam">Naam</label><br>
-    <input type="text" id="naam" name="naam" required><br><br>
-    
+    <input type="text" id="naam" name="naam" value="{{resultaten.naam}}" required><br><br>
+
     <label for="studentnummer">Studentnummer</label><br>
-    <input type="number" id="studentnummer" name="studentnummer" required><br>
+    <input type="number" id="studentnummer" name="studentnummer" value="{{resultaten.studentnummer}}" required><br>
 
     <h2>Vak 1</h2>
 
@@ -24,137 +24,14 @@
     <input type="radio" id="week-11-13-vak-1" value="week-11-13-vak-1" name="week-vak-1" required> <label for="week-11-13-vak-1">11-13</label><br>
     <input type="radio" id="week-15-19-vak-1" value="week-15-19-vak-1" name="week-vak-1" required> <label for="week-15-19-vak-1">15-19</label><br><br>
     
-    <label for="lesstof-vak-1">Moeilijkheid van lesstof</label><br>
-    <div class="display-flex">
-        <div>
-            <input type="radio" id="lesstof-1-vak-1" value="lesstof-1-vak-1" name="lesstof-vak-1" required>
-            <label for="lesstof-1-vak-1">1</label><br>
-        </div>
-        <div>
-            <input type="radio" id="lesstof-2-vak-1" value="lesstof-2-vak-1" name="lesstof-vak-1" required>
-            <label for="lesstof-2-vak-1">2</label><br>
-        </div>
-        <div>
-            <input type="radio" id="lesstof-3-vak-1" value="lesstof-3-vak-1" name="lesstof-vak-1" required>
-            <label for="lesstof-3-vak-1">3</label><br>
-        </div>
-        <div>
-            <input type="radio" id="lesstof-4-vak-1" value="lesstof-4-vak-1" name="lesstof-vak-1" required>
-            <label for="lesstof-4-vak-1">4</label><br>
-        </div>
-        <div>
-            <input type="radio" id="lesstof-5-vak-1" value="lesstof-5-vak-1" name="lesstof-vak-1" required>
-            <label for="lesstof-5-vak-1">5</label><br>
-        </div>
-        <div>
-            <input type="radio" id="lesstof-6-vak-1" value="lesstof-6-vak-1" name="lesstof-vak-1" required>
-            <label for="lesstof-6-vak-1">6</label><br>
-        </div>
-        <div>
-            <input type="radio" id="lesstof-7-vak-1" value="lesstof-7-vak-1" name="lesstof-vak-1" required>
-            <label for="lesstof-7-vak-1">7</label><br>
-        </div>
-        <div>
-            <input type="radio" id="lesstof-8-vak-1" value="lesstof-8-vak-1" name="lesstof-vak-1" required>
-            <label for="lesstof-8-vak-1">8</label><br>
-        </div>
-        <div>
-            <input type="radio" id="lesstof-9-vak-1" value="lesstof-9-vak-1" name="lesstof-vak-1" required>
-            <label for="lesstof-9-vak-1">9</label><br>
-        </div>
-        <div>
-            <input type="radio" id="lesstof-10-vak-1" value="lesstof-10-vak-1" name="lesstof-vak-1" required>
-            <label for="lesstof-10-vak-1">10</label><br><br>
-        </div>
-    </div>
+    <label for="lesstof-vak-1">Moeilijkheid van lesstof (1-10)</label><br>
+    <input type="number" id="lesstof-vak-1" name="lesstof-vak-1" value="{{resultaten.lesstof-vak-1}}" min="1" max="10"><br><br>
 
-    <label for="uitleg-vak-1">Duidelijkheid van uitleg</label><br>
-    <div class="display-flex">
-        <div>
-            <input type="radio" id="uitleg-1-vak-1" value="uitleg-1-vak-1" name="uitleg-vak-1" required>
-            <label for="uitleg-1-vak-1">1</label><br>
-        </div>
-        <div>
-            <input type="radio" id="uitleg-2-vak-1" value="uitleg-2-vak-1" name="uitleg-vak-1" required>
-            <label for="uitleg-2-vak-1">2</label><br>
-        </div>
-        <div>
-            <input type="radio" id="uitleg-3-vak-1" value="uitleg-3-vak-1" name="uitleg-vak-1" required>
-            <label for="uitleg-3-vak-1">3</label><br>
-        </div>
-        <div>
-            <input type="radio" id="uitleg-4-vak-1" value="uitleg-4-vak-1" name="uitleg-vak-1" required>
-            <label for="uitleg-4-vak-1">4</label><br>
-        </div>
-        <div>
-            <input type="radio" id="uitleg-5-vak-1" value="uitleg-5-vak-1" name="uitleg-vak-1" required>
-            <label for="uitleg-5-vak-1">5</label><br>
-        </div>
-        <div>
-            <input type="radio" id="uitleg-6-vak-1" value="uitleg-6-vak-1" name="uitleg-vak-1" required>
-            <label for="uitleg-6-vak-1">6</label><br>
-        </div>
-        <div>
-            <input type="radio" id="uitleg-7-vak-1" value="uitleg-7-vak-1" name="uitleg-vak-1" required>
-            <label for="uitleg-7-vak-1">7</label><br>
-        </div>
-        <div>
-            <input type="radio" id="uitleg-8-vak-1" value="uitleg-8-vak-1" name="uitleg-vak-1" required>
-            <label for="uitleg-8-vak-1">8</label><br>
-        </div>
-        <div>
-            <input type="radio" id="uitleg-9-vak-1" value="uitleg-9-vak-1" name="uitleg-vak-1" required>
-            <label for="uitleg-9-vak-1">9</label><br>
-        </div>
-        <div>
-            <input type="radio" id="uitleg-10-vak-1" value="uitleg-10-vak-1" name="uitleg-vak-1" required>
-            <label for="uitleg-10-vak-1">10</label><br><br>
-        </div>
-    </div>
+    <label for="uitleg-vak-1">Duidelijkheid van uitleg (1-10)</label><br>
+    <input type="number" id="uitleg-vak-1" name="uitleg-vak-1" value="{{resultaten.uitleg-vak-1}}" min="1" max="10"><br><br>
 
-    <label for="eigen-inzicht-vak-1">Mate van eigen inzicht</label><br>
-    <div class="display-flex">
-        <div>
-            <input type="radio" id="eigen-inzicht-1-vak-1" value="eigen-inzicht-1-vak-1" name="eigen-inzicht-vak-1" required>
-            <label for="eigen-inzicht-1-vak-1">1</label><br>
-        </div>
-        <div>
-            <input type="radio" id="eigen-inzicht-2-vak-1" value="eigen-inzicht-2-vak-1" name="eigen-inzicht-vak-1" required>
-            <label for="eigen-inzicht-2-vak-1">2</label><br>
-        </div>
-        <div>
-            <input type="radio" id="eigen-inzicht-3-vak-1" value="eigen-inzicht-3-vak-1" name="eigen-inzicht-vak-1" required>
-            <label for="eigen-inzicht-3-vak-1">3</label><br>
-        </div>
-        <div>
-            <input type="radio" id="eigen-inzicht-4-vak-1" value="eigen-inzicht-4-vak-1" name="eigen-inzicht-vak-1" required>
-            <label for="eigen-inzicht-4-vak-1">4</label><br>
-        </div>
-        <div>
-            <input type="radio" id="eigen-inzicht-5-vak-1" value="eigen-inzicht-5-vak-1" name="eigen-inzicht-vak-1" required>
-            <label for="eigen-inzicht-5-vak-1">5</label><br>
-        </div>
-        <div>
-            <input type="radio" id="eigen-inzicht-6-vak-1" value="eigen-inzicht-6-vak-1" name="eigen-inzicht-vak-1" required>
-            <label for="eigen-inzicht-6-vak-1">6</label><br>
-        </div>
-        <div>
-            <input type="radio" id="eigen-inzicht-7-vak-1" value="eigen-inzicht-7-vak-1" name="eigen-inzicht-vak-1" required>
-            <label for="eigen-inzicht-7-vak-1">7</label><br>
-        </div>
-        <div>
-            <input type="radio" id="eigen-inzicht-8-vak-1" value="eigen-inzicht-8-vak-1" name="eigen-inzicht-vak-1" required>
-            <label for="eigen-inzicht-8-vak-1">8</label><br>
-        </div>
-        <div>
-            <input type="radio" id="eigen-inzicht-9-vak-1" value="eigen-inzicht-9-vak-1" name="eigen-inzicht-vak-1" required>
-            <label for="eigen-inzicht-9-vak-1">9</label><br>
-        </div>
-        <div>
-            <input type="radio" id="eigen-inzicht-10-vak-1" value="eigen-inzicht-10-vak-1" name="eigen-inzicht-vak-1" required>
-            <label for="eigen-inzicht-10-vak-1">10</label><br><br>
-        </div>
-    </div>
+    <label for="eigen-inzicht-vak-1">Mate van eigen inzicht (1-10)</label><br>
+    <input type="number" id="eigen-inzicht-vak-1" name="eigen-inzicht-vak-1" value="{{resultaten.eigen-inzicht-vak-1}}" min="1" max="10"><br><br>
 
     {{!-- <h2>Vak 2</h2>
 
@@ -1487,8 +1364,6 @@
             <label for="eigen-inzicht-10-vak-10">10</label><br><br>
         </div>
     </div> --}}
-
-    <p>{{resultaten.naam}}</p>
 
     <input type="submit" value="Submit">
     <input type="reset">
