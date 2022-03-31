@@ -4,8 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enquête Minor Web Design & Development</title>
     <style>
-        p {
-            margin: 0;
+        .display-flex {
+            display: flex;
+        }
+
+        .display-flex div {
+            text-align: center;
+        }
+
+        .display-flex div input {
+            display: block;
         }
     </style>
 </head>
@@ -22,575 +30,1631 @@
 
         <h2>Vak 1</h2>
 
-        <label for="naam_vak_1">Naam</label><br>
-        <input type="text" id="naam_vak_1" value="Web App From Scratch" required><br><br>
+        <label for="naam-vak-1">Naam</label><br>
+        <input type="text" id="naam-vak-1" value="Web App From Scratch" required><br><br>
 
-        <label for="docenten_vak_1">Docenten</label><br>
-        <input type="text" id="docenten_vak_1" value="Joost Faber en Koop Reynders" required><br><br>
-
-        <label for="week_vak_1">Week</label><br>
-        <input type="radio" id="week_1_vak_1" name="week_vak_1" required checked> <label for="week_1_vak_1">1-5</label><br>
-        <input type="radio" id="week_6_vak_1" name="week_vak_1" required> <label for="week_6_vak_1">6</label><br>
-        <input type="radio" id="week_7_9_vak_1" name="week_vak_1" required> <label for="week_7_9_vak_1">7-9</label><br>
-        <input type="radio" id="week_10_vak_1" name="week_vak_1" required> <label for="week_10_vak_1">10</label><br>
-        <input type="radio" id="week_11_13_vak_1" name="week_vak_1" required> <label for="week_11_13_vak_1">11-13</label><br>
-        <input type="radio" id="week_15_19_vak_1" name="week_vak_1" required> <label for="week_15_19_vak_1">15-19</label><br><br>
+        <label for="docenten-vak-1">Docenten</label><br>
+        <input type="text" id="docenten-vak-1" value="Joost Faber en Koop Reynders" required><br><br>
         
-        <label for="lesstof_vak_1">Moeilijkheid van lesstof</label><br>
-        <input type="radio" id="lesstof_1_vak_1" name="lesstof_vak_1" required> <label for="lesstof_1_vak_1">1</label><br>
-        <input type="radio" id="lesstof_2_vak_1" name="lesstof_vak_1" required> <label for="lesstof_2_vak_1">2</label><br>
-        <input type="radio" id="lesstof_3_vak_1" name="lesstof_vak_1" required> <label for="lesstof_3_vak_1">3</label><br>
-        <input type="radio" id="lesstof_4_vak_1" name="lesstof_vak_1" required> <label for="lesstof_4_vak_1">4</label><br>
-        <input type="radio" id="lesstof_5_vak_1" name="lesstof_vak_1" required> <label for="lesstof_5_vak_1">5</label><br>
-        <input type="radio" id="lesstof_6_vak_1" name="lesstof_vak_1" required> <label for="lesstof_6_vak_1">6</label><br>
-        <input type="radio" id="lesstof_7_vak_1" name="lesstof_vak_1" required> <label for="lesstof_7_vak_1">7</label><br>
-        <input type="radio" id="lesstof_8_vak_1" name="lesstof_vak_1" required> <label for="lesstof_8_vak_1">8</label><br>
-        <input type="radio" id="lesstof_9_vak_1" name="lesstof_vak_1" required> <label for="lesstof_9_vak_1">9</label><br>
-        <input type="radio" id="lesstof_10_vak_1" name="lesstof_vak_1" required> <label for="lesstof_10_vak_1">10</label><br><br>
+        <label for="week-vak-1">Week</label><br>
+        <input type="radio" id="week-1-vak-1" name="week-vak-1" required checked> <label for="week-1-vak-1">1-5</label><br>
+        <input type="radio" id="week-6-vak-1" name="week-vak-1" required> <label for="week-6-vak-1">6</label><br>
+        <input type="radio" id="week-7-9-vak-1" name="week-vak-1" required> <label for="week-7-9-vak-1">7-9</label><br>
+        <input type="radio" id="week-10-vak-1" name="week-vak-1" required> <label for="week-10-vak-1">10</label><br>
+        <input type="radio" id="week-11-13-vak-1" name="week-vak-1" required> <label for="week-11-13-vak-1">11-13</label><br>
+        <input type="radio" id="week-15-19-vak-1" name="week-vak-1" required> <label for="week-15-19-vak-1">15-19</label><br><br>
+        
+        <label for="lesstof-vak-2">Moeilijkheid van lesstof</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="lesstof-1-vak-2" name="lesstof-vak-2" required>
+                <label for="lesstof-1-vak-2">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-2-vak-2" name="lesstof-vak-2" required>
+                <label for="lesstof-2-vak-2">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-3-vak-2" name="lesstof-vak-2" required>
+                <label for="lesstof-3-vak-2">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-4-vak-2" name="lesstof-vak-2" required>
+                <label for="lesstof-4-vak-2">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-5-vak-2" name="lesstof-vak-2" required>
+                <label for="lesstof-5-vak-2">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-6-vak-2" name="lesstof-vak-2" required>
+                <label for="lesstof-6-vak-2">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-7-vak-2" name="lesstof-vak-2" required>
+                <label for="lesstof-7-vak-2">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-8-vak-2" name="lesstof-vak-2" required>
+                <label for="lesstof-8-vak-2">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-9-vak-2" name="lesstof-vak-2" required>
+                <label for="lesstof-9-vak-2">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-10-vak-2" name="lesstof-vak-2" required>
+                <label for="lesstof-10-vak-2">10</label><br><br>
+            </div>
+        </div>
 
-        <label for="uitleg_vak_1">Duidelijkheid van uitleg</label><br>
-        <input type="radio" id="uitleg_1_vak_1" name="uitleg_vak_1" required> <label for="uitleg_1_vak_1">1</label><br>
-        <input type="radio" id="uitleg_2_vak_1" name="uitleg_vak_1" required> <label for="uitleg_2_vak_1">2</label><br>
-        <input type="radio" id="uitleg_3_vak_1" name="uitleg_vak_1" required> <label for="uitleg_3_vak_1">3</label><br>
-        <input type="radio" id="uitleg_4_vak_1" name="uitleg_vak_1" required> <label for="uitleg_4_vak_1">4</label><br>
-        <input type="radio" id="uitleg_5_vak_1" name="uitleg_vak_1" required> <label for="uitleg_5_vak_1">5</label><br>
-        <input type="radio" id="uitleg_6_vak_1" name="uitleg_vak_1" required> <label for="uitleg_6_vak_1">6</label><br>
-        <input type="radio" id="uitleg_7_vak_1" name="uitleg_vak_1" required> <label for="uitleg_7_vak_1">7</label><br>
-        <input type="radio" id="uitleg_8_vak_1" name="uitleg_vak_1" required> <label for="uitleg_8_vak_1">8</label><br>
-        <input type="radio" id="uitleg_9_vak_1" name="uitleg_vak_1" required> <label for="uitleg_9_vak_1">9</label><br>
-        <input type="radio" id="uitleg_10_vak_1" name="uitleg_vak_1" required> <label for="uitleg_10_vak_1">10</label><br><br>
+        <label for="uitleg-vak-2">Duidelijkheid van uitleg</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="uitleg-1-vak-2" name="uitleg-vak-2" required>
+                <label for="uitleg-1-vak-2">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-2-vak-2" name="uitleg-vak-2" required>
+                <label for="uitleg-2-vak-2">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-3-vak-2" name="uitleg-vak-2" required>
+                <label for="uitleg-3-vak-2">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-4-vak-2" name="uitleg-vak-2" required>
+                <label for="uitleg-4-vak-2">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-5-vak-2" name="uitleg-vak-2" required>
+                <label for="uitleg-5-vak-2">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-6-vak-2" name="uitleg-vak-2" required>
+                <label for="uitleg-6-vak-2">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-7-vak-2" name="uitleg-vak-2" required>
+                <label for="uitleg-7-vak-2">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-8-vak-2" name="uitleg-vak-2" required>
+                <label for="uitleg-8-vak-2">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-9-vak-2" name="uitleg-vak-2" required>
+                <label for="uitleg-9-vak-2">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-10-vak-2" name="uitleg-vak-2" required>
+                <label for="uitleg-10-vak-2">10</label><br><br>
+            </div>
+        </div>
 
-        <label for="eigen_inzicht_vak_1">Mate van eigen inzicht</label><br>
-        <input type="radio" id="eigen_inzicht_1_vak_1" name="eigen_inzicht_vak_1" required> <label for="eigen_inzicht_1_vak_1">1</label><br>
-        <input type="radio" id="eigen_inzicht_2_vak_1" name="eigen_inzicht_vak_1" required> <label for="eigen_inzicht_2_vak_1">2</label><br>
-        <input type="radio" id="eigen_inzicht_3_vak_1" name="eigen_inzicht_vak_1" required> <label for="eigen_inzicht_3_vak_1">3</label><br>
-        <input type="radio" id="eigen_inzicht_4_vak_1" name="eigen_inzicht_vak_1" required> <label for="eigen_inzicht_4_vak_1">4</label><br>
-        <input type="radio" id="eigen_inzicht_5_vak_1" name="eigen_inzicht_vak_1" required> <label for="eigen_inzicht_5_vak_1">5</label><br>
-        <input type="radio" id="eigen_inzicht_6_vak_1" name="eigen_inzicht_vak_1" required> <label for="eigen_inzicht_6_vak_1">6</label><br>
-        <input type="radio" id="eigen_inzicht_7_vak_1" name="eigen_inzicht_vak_1" required> <label for="eigen_inzicht_7_vak_1">7</label><br>
-        <input type="radio" id="eigen_inzicht_8_vak_1" name="eigen_inzicht_vak_1" required> <label for="eigen_inzicht_8_vak_1">8</label><br>
-        <input type="radio" id="eigen_inzicht_9_vak_1" name="eigen_inzicht_vak_1" required> <label for="eigen_inzicht_9_vak_1">9</label><br>
-        <input type="radio" id="eigen_inzicht_10_vak_1" name="eigen_inzicht_vak_1" required> <label for="eigen_inzicht_10_vak_1">10</label><br><br>
+        <label for="eigen-inzicht-vak-2">Mate van eigen inzicht</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="eigen-inzicht-1-vak-2" name="eigen-inzicht-vak-2" required>
+                <label for="eigen-inzicht-1-vak-2">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-2-vak-2" name="eigen-inzicht-vak-2" required>
+                <label for="eigen-inzicht-2-vak-2">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-3-vak-2" name="eigen-inzicht-vak-2" required>
+                <label for="eigen-inzicht-3-vak-2">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-4-vak-2" name="eigen-inzicht-vak-2" required>
+                <label for="eigen-inzicht-4-vak-2">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-5-vak-2" name="eigen-inzicht-vak-2" required>
+                <label for="eigen-inzicht-5-vak-2">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-6-vak-2" name="eigen-inzicht-vak-2" required>
+                <label for="eigen-inzicht-6-vak-2">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-7-vak-2" name="eigen-inzicht-vak-2" required>
+                <label for="eigen-inzicht-7-vak-2">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-8-vak-2" name="eigen-inzicht-vak-2" required>
+                <label for="eigen-inzicht-8-vak-2">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-9-vak-2" name="eigen-inzicht-vak-2" required>
+                <label for="eigen-inzicht-9-vak-2">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-10-vak-2" name="eigen-inzicht-vak-2" required>
+                <label for="eigen-inzicht-10-vak-2">10</label><br><br>
+            </div>
+        </div>
 
         <h2>Vak 2</h2>
 
-        <label for="naam_vak_2">Naam</label><br>
-        <input type="text" id="naam_vak_2" value="CSS to the Rescue" required><br><br>
+        <label for="naam-vak-2">Naam</label><br>
+        <input type="text" id="naam-vak-2" value="CSS to the Rescue" required><br><br>
 
-        <label for="docenten_vak_2">Docenten</label><br>
-        <input type="text" id="docenten_vak_2" value="Sanne Hooft en Vasilis van Gemert" required><br><br>
+        <label for="docenten-vak-2">Docenten</label><br>
+        <input type="text" id="docenten-vak-2" value="Sanne Hooft en Vasilis van Gemert" required><br><br>
 
-        <label for="week_vak_2">Week</label><br>
-        <input type="radio" id="week_1_vak_2" name="week_vak_2" required checked> <label for="week_1_vak_2">1-5</label><br>
-        <input type="radio" id="week_6_vak_2" name="week_vak_2" required> <label for="week_6_vak_2">6</label><br>
-        <input type="radio" id="week_7_9_vak_2" name="week_vak_2" required> <label for="week_7_9_vak_2">7-9</label><br>
-        <input type="radio" id="week_10_vak_2" name="week_vak_2" required> <label for="week_10_vak_2">10</label><br>
-        <input type="radio" id="week_11_13_vak_2" name="week_vak_2" required> <label for="week_11_13_vak_2">11-13</label><br>
-        <input type="radio" id="week_15_19_vak_2" name="week_vak_2" required> <label for="week_15_19_vak_2">15-19</label><br><br>
+        <label for="week-vak-2">Week</label><br>
+        <input type="radio" id="week-1-vak-2" name="week-vak-2" required checked> <label for="week-1-vak-2">1-5</label><br>
+        <input type="radio" id="week-6-vak-2" name="week-vak-2" required> <label for="week-6-vak-2">6</label><br>
+        <input type="radio" id="week-7-9-vak-2" name="week-vak-2" required> <label for="week-7-9-vak-2">7-9</label><br>
+        <input type="radio" id="week-10-vak-2" name="week-vak-2" required> <label for="week-10-vak-2">10</label><br>
+        <input type="radio" id="week-11-13-vak-2" name="week-vak-2" required> <label for="week-11-13-vak-2">11-13</label><br>
+        <input type="radio" id="week-15-19-vak-2" name="week-vak-2" required> <label for="week-15-19-vak-2">15-19</label><br><br>
         
-        <label for="lesstof_vak_2">Moeilijkheid van lesstof</label><br>
-        <input type="radio" id="lesstof_1_vak_2" name="lesstof_vak_2" required> <label for="lesstof_1_vak_2">1</label><br>
-        <input type="radio" id="lesstof_2_vak_2" name="lesstof_vak_2" required> <label for="lesstof_2_vak_2">2</label><br>
-        <input type="radio" id="lesstof_3_vak_2" name="lesstof_vak_2" required> <label for="lesstof_3_vak_2">3</label><br>
-        <input type="radio" id="lesstof_4_vak_2" name="lesstof_vak_2" required> <label for="lesstof_4_vak_2">4</label><br>
-        <input type="radio" id="lesstof_5_vak_2" name="lesstof_vak_2" required> <label for="lesstof_5_vak_2">5</label><br>
-        <input type="radio" id="lesstof_6_vak_2" name="lesstof_vak_2" required> <label for="lesstof_6_vak_2">6</label><br>
-        <input type="radio" id="lesstof_7_vak_2" name="lesstof_vak_2" required> <label for="lesstof_7_vak_2">7</label><br>
-        <input type="radio" id="lesstof_8_vak_2" name="lesstof_vak_2" required> <label for="lesstof_8_vak_2">8</label><br>
-        <input type="radio" id="lesstof_9_vak_2" name="lesstof_vak_2" required> <label for="lesstof_9_vak_2">9</label><br>
-        <input type="radio" id="lesstof_10_vak_2" name="lesstof_vak_2" required> <label for="lesstof_10_vak_2">10</label><br><br>
+        <label for="lesstof-vak-2">Moeilijkheid van lesstof</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="lesstof-1-vak-2" name="lesstof-vak-2" required>
+                <label for="lesstof-1-vak-2">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-2-vak-2" name="lesstof-vak-2" required>
+                <label for="lesstof-2-vak-2">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-3-vak-2" name="lesstof-vak-2" required>
+                <label for="lesstof-3-vak-2">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-4-vak-2" name="lesstof-vak-2" required>
+                <label for="lesstof-4-vak-2">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-5-vak-2" name="lesstof-vak-2" required>
+                <label for="lesstof-5-vak-2">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-6-vak-2" name="lesstof-vak-2" required>
+                <label for="lesstof-6-vak-2">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-7-vak-2" name="lesstof-vak-2" required>
+                <label for="lesstof-7-vak-2">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-8-vak-2" name="lesstof-vak-2" required>
+                <label for="lesstof-8-vak-2">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-9-vak-2" name="lesstof-vak-2" required>
+                <label for="lesstof-9-vak-2">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-10-vak-2" name="lesstof-vak-2" required>
+                <label for="lesstof-10-vak-2">10</label><br><br>
+            </div>
+        </div>
 
-        <label for="uitleg_vak_2">Duidelijkheid van uitleg</label><br>
-        <input type="radio" id="uitleg_1_vak_2" name="uitleg_vak_2" required> <label for="uitleg_1_vak_2">1</label><br>
-        <input type="radio" id="uitleg_2_vak_2" name="uitleg_vak_2" required> <label for="uitleg_2_vak_2">2</label><br>
-        <input type="radio" id="uitleg_3_vak_2" name="uitleg_vak_2" required> <label for="uitleg_3_vak_2">3</label><br>
-        <input type="radio" id="uitleg_4_vak_2" name="uitleg_vak_2" required> <label for="uitleg_4_vak_2">4</label><br>
-        <input type="radio" id="uitleg_5_vak_2" name="uitleg_vak_2" required> <label for="uitleg_5_vak_2">5</label><br>
-        <input type="radio" id="uitleg_6_vak_2" name="uitleg_vak_2" required> <label for="uitleg_6_vak_2">6</label><br>
-        <input type="radio" id="uitleg_7_vak_2" name="uitleg_vak_2" required> <label for="uitleg_7_vak_2">7</label><br>
-        <input type="radio" id="uitleg_8_vak_2" name="uitleg_vak_2" required> <label for="uitleg_8_vak_2">8</label><br>
-        <input type="radio" id="uitleg_9_vak_2" name="uitleg_vak_2" required> <label for="uitleg_9_vak_2">9</label><br>
-        <input type="radio" id="uitleg_10_vak_2" name="uitleg_vak_2" required> <label for="uitleg_10_vak_2">10</label><br><br>
+        <label for="uitleg-vak-2">Duidelijkheid van uitleg</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="uitleg-1-vak-2" name="uitleg-vak-2" required>
+                <label for="uitleg-1-vak-2">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-2-vak-2" name="uitleg-vak-2" required>
+                <label for="uitleg-2-vak-2">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-3-vak-2" name="uitleg-vak-2" required>
+                <label for="uitleg-3-vak-2">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-4-vak-2" name="uitleg-vak-2" required>
+                <label for="uitleg-4-vak-2">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-5-vak-2" name="uitleg-vak-2" required>
+                <label for="uitleg-5-vak-2">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-6-vak-2" name="uitleg-vak-2" required>
+                <label for="uitleg-6-vak-2">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-7-vak-2" name="uitleg-vak-2" required>
+                <label for="uitleg-7-vak-2">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-8-vak-2" name="uitleg-vak-2" required>
+                <label for="uitleg-8-vak-2">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-9-vak-2" name="uitleg-vak-2" required>
+                <label for="uitleg-9-vak-2">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-10-vak-2" name="uitleg-vak-2" required>
+                <label for="uitleg-10-vak-2">10</label><br><br>
+            </div>
+        </div>
 
-        <label for="eigen_inzicht_vak_2">Mate van eigen inzicht</label><br>
-        <input type="radio" id="eigen_inzicht_1_vak_2" name="eigen_inzicht_vak_2" required> <label for="eigen_inzicht_1_vak_2">1</label><br>
-        <input type="radio" id="eigen_inzicht_2_vak_2" name="eigen_inzicht_vak_2" required> <label for="eigen_inzicht_2_vak_2">2</label><br>
-        <input type="radio" id="eigen_inzicht_3_vak_2" name="eigen_inzicht_vak_2" required> <label for="eigen_inzicht_3_vak_2">3</label><br>
-        <input type="radio" id="eigen_inzicht_4_vak_2" name="eigen_inzicht_vak_2" required> <label for="eigen_inzicht_4_vak_2">4</label><br>
-        <input type="radio" id="eigen_inzicht_5_vak_2" name="eigen_inzicht_vak_2" required> <label for="eigen_inzicht_5_vak_2">5</label><br>
-        <input type="radio" id="eigen_inzicht_6_vak_2" name="eigen_inzicht_vak_2" required> <label for="eigen_inzicht_6_vak_2">6</label><br>
-        <input type="radio" id="eigen_inzicht_7_vak_2" name="eigen_inzicht_vak_2" required> <label for="eigen_inzicht_7_vak_2">7</label><br>
-        <input type="radio" id="eigen_inzicht_8_vak_2" name="eigen_inzicht_vak_2" required> <label for="eigen_inzicht_8_vak_2">8</label><br>
-        <input type="radio" id="eigen_inzicht_9_vak_2" name="eigen_inzicht_vak_2" required> <label for="eigen_inzicht_9_vak_2">9</label><br>
-        <input type="radio" id="eigen_inzicht_10_vak_2" name="eigen_inzicht_vak_2" required> <label for="eigen_inzicht_10_vak_2">10</label><br><br>
+        <label for="eigen-inzicht-vak-2">Mate van eigen inzicht</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="eigen-inzicht-1-vak-2" name="eigen-inzicht-vak-2" required>
+                <label for="eigen-inzicht-1-vak-2">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-2-vak-2" name="eigen-inzicht-vak-2" required>
+                <label for="eigen-inzicht-2-vak-2">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-3-vak-2" name="eigen-inzicht-vak-2" required>
+                <label for="eigen-inzicht-3-vak-2">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-4-vak-2" name="eigen-inzicht-vak-2" required>
+                <label for="eigen-inzicht-4-vak-2">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-5-vak-2" name="eigen-inzicht-vak-2" required>
+                <label for="eigen-inzicht-5-vak-2">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-6-vak-2" name="eigen-inzicht-vak-2" required>
+                <label for="eigen-inzicht-6-vak-2">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-7-vak-2" name="eigen-inzicht-vak-2" required>
+                <label for="eigen-inzicht-7-vak-2">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-8-vak-2" name="eigen-inzicht-vak-2" required>
+                <label for="eigen-inzicht-8-vak-2">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-9-vak-2" name="eigen-inzicht-vak-2" required>
+                <label for="eigen-inzicht-9-vak-2">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-10-vak-2" name="eigen-inzicht-vak-2" required>
+                <label for="eigen-inzicht-10-vak-2">10</label><br><br>
+            </div>
+        </div>
 
         <h2>Vak 3</h2>
 
-        <label for="naam_vak_3">Naam</label><br>
-        <input type="text" id="naam_vak_3" value="Projectweek 1" required><br><br>
+        <label for="naam-vak-3">Naam</label><br>
+        <input type="text" id="naam-vak-3" value="Projectweek 1" required><br><br>
 
-        <label for="docenten_vak_3">Docenten</label><br>
-        <input type="text" id="docenten_vak_3" value="Joost Faber en Koop Reynders" required><br><br>
+        <label for="docenten-vak-3">Docenten</label><br>
+        <input type="text" id="docenten-vak-3" value="Joost Faber en Koop Reynders" required><br><br>
 
-        <label for="week_vak_3">Week</label><br>
-        <input type="radio" id="week_1_vak_3" name="week_vak_3" required> <label for="week_1_vak_3">1-5</label><br>
-        <input type="radio" id="week_6_vak_3" name="week_vak_3" required checked> <label for="week_6_vak_3">6</label><br>
-        <input type="radio" id="week_7_9_vak_3" name="week_vak_3" required> <label for="week_7_9_vak_3">7-9</label><br>
-        <input type="radio" id="week_10_vak_3" name="week_vak_3" required> <label for="week_10_vak_3">10</label><br>
-        <input type="radio" id="week_11_13_vak_3" name="week_vak_3" required> <label for="week_11_13_vak_3">11-13</label><br>
-        <input type="radio" id="week_15_19_vak_3" name="week_vak_3" required> <label for="week_15_19_vak_3">15-19</label><br><br>
+        <label for="week-vak-3">Week</label><br>
+        <input type="radio" id="week-1-vak-3" name="week-vak-3" required> <label for="week-1-vak-3">1-5</label><br>
+        <input type="radio" id="week-6-vak-3" name="week-vak-3" required checked> <label for="week-6-vak-3">6</label><br>
+        <input type="radio" id="week-7-9-vak-3" name="week-vak-3" required> <label for="week-7-9-vak-3">7-9</label><br>
+        <input type="radio" id="week-10-vak-3" name="week-vak-3" required> <label for="week-10-vak-3">10</label><br>
+        <input type="radio" id="week-11-13-vak-3" name="week-vak-3" required> <label for="week-11-13-vak-3">11-13</label><br>
+        <input type="radio" id="week-15-19-vak-3" name="week-vak-3" required> <label for="week-15-19-vak-3">15-19</label><br><br>
         
-        <label for="lesstof_vak_3">Moeilijkheid van lesstof</label><br>
-        <input type="radio" id="lesstof_1_vak_3" name="lesstof_vak_3" required> <label for="lesstof_1_vak_3">1</label><br>
-        <input type="radio" id="lesstof_2_vak_3" name="lesstof_vak_3" required> <label for="lesstof_2_vak_3">2</label><br>
-        <input type="radio" id="lesstof_3_vak_3" name="lesstof_vak_3" required> <label for="lesstof_3_vak_3">3</label><br>
-        <input type="radio" id="lesstof_4_vak_3" name="lesstof_vak_3" required> <label for="lesstof_4_vak_3">4</label><br>
-        <input type="radio" id="lesstof_5_vak_3" name="lesstof_vak_3" required> <label for="lesstof_5_vak_3">5</label><br>
-        <input type="radio" id="lesstof_6_vak_3" name="lesstof_vak_3" required> <label for="lesstof_6_vak_3">6</label><br>
-        <input type="radio" id="lesstof_7_vak_3" name="lesstof_vak_3" required> <label for="lesstof_7_vak_3">7</label><br>
-        <input type="radio" id="lesstof_8_vak_3" name="lesstof_vak_3" required> <label for="lesstof_8_vak_3">8</label><br>
-        <input type="radio" id="lesstof_9_vak_3" name="lesstof_vak_3" required> <label for="lesstof_9_vak_3">9</label><br>
-        <input type="radio" id="lesstof_10_vak_3" name="lesstof_vak_3" required> <label for="lesstof_10_vak_3">10</label><br><br>
+        <label for="lesstof-vak-3">Moeilijkheid van lesstof</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="lesstof-1-vak-3" name="lesstof-vak-3" required>
+                <label for="lesstof-1-vak-3">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-2-vak-3" name="lesstof-vak-3" required>
+                <label for="lesstof-2-vak-3">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-3-vak-3" name="lesstof-vak-3" required>
+                <label for="lesstof-3-vak-3">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-4-vak-3" name="lesstof-vak-3" required>
+                <label for="lesstof-4-vak-3">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-5-vak-3" name="lesstof-vak-3" required>
+                <label for="lesstof-5-vak-3">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-6-vak-3" name="lesstof-vak-3" required>
+                <label for="lesstof-6-vak-3">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-7-vak-3" name="lesstof-vak-3" required>
+                <label for="lesstof-7-vak-3">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-8-vak-3" name="lesstof-vak-3" required>
+                <label for="lesstof-8-vak-3">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-9-vak-3" name="lesstof-vak-3" required>
+                <label for="lesstof-9-vak-3">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-10-vak-3" name="lesstof-vak-3" required>
+                <label for="lesstof-10-vak-3">10</label><br><br>
+            </div>
+        </div>
 
-        <label for="uitleg_vak_3">Duidelijkheid van uitleg</label><br>
-        <input type="radio" id="uitleg_1_vak_3" name="uitleg_vak_3" required> <label for="uitleg_1_vak_3">1</label><br>
-        <input type="radio" id="uitleg_2_vak_3" name="uitleg_vak_3" required> <label for="uitleg_2_vak_3">2</label><br>
-        <input type="radio" id="uitleg_3_vak_3" name="uitleg_vak_3" required> <label for="uitleg_3_vak_3">3</label><br>
-        <input type="radio" id="uitleg_4_vak_3" name="uitleg_vak_3" required> <label for="uitleg_4_vak_3">4</label><br>
-        <input type="radio" id="uitleg_5_vak_3" name="uitleg_vak_3" required> <label for="uitleg_5_vak_3">5</label><br>
-        <input type="radio" id="uitleg_6_vak_3" name="uitleg_vak_3" required> <label for="uitleg_6_vak_3">6</label><br>
-        <input type="radio" id="uitleg_7_vak_3" name="uitleg_vak_3" required> <label for="uitleg_7_vak_3">7</label><br>
-        <input type="radio" id="uitleg_8_vak_3" name="uitleg_vak_3" required> <label for="uitleg_8_vak_3">8</label><br>
-        <input type="radio" id="uitleg_9_vak_3" name="uitleg_vak_3" required> <label for="uitleg_9_vak_3">9</label><br>
-        <input type="radio" id="uitleg_10_vak_3" name="uitleg_vak_3" required> <label for="uitleg_10_vak_3">10</label><br><br>
+        <label for="uitleg-vak-3">Duidelijkheid van uitleg</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="uitleg-1-vak-3" name="uitleg-vak-3" required>
+                <label for="uitleg-1-vak-3">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-2-vak-3" name="uitleg-vak-3" required>
+                <label for="uitleg-2-vak-3">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-3-vak-3" name="uitleg-vak-3" required>
+                <label for="uitleg-3-vak-3">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-4-vak-3" name="uitleg-vak-3" required>
+                <label for="uitleg-4-vak-3">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-5-vak-3" name="uitleg-vak-3" required>
+                <label for="uitleg-5-vak-3">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-6-vak-3" name="uitleg-vak-3" required>
+                <label for="uitleg-6-vak-3">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-7-vak-3" name="uitleg-vak-3" required>
+                <label for="uitleg-7-vak-3">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-8-vak-3" name="uitleg-vak-3" required>
+                <label for="uitleg-8-vak-3">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-9-vak-3" name="uitleg-vak-3" required>
+                <label for="uitleg-9-vak-3">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-10-vak-3" name="uitleg-vak-3" required>
+                <label for="uitleg-10-vak-3">10</label><br><br>
+            </div>
+        </div>
 
-        <label for="eigen_inzicht_vak_3">Mate van eigen inzicht</label><br>
-        <input type="radio" id="eigen_inzicht_1_vak_3" name="eigen_inzicht_vak_3" required> <label for="eigen_inzicht_1_vak_3">1</label><br>
-        <input type="radio" id="eigen_inzicht_2_vak_3" name="eigen_inzicht_vak_3" required> <label for="eigen_inzicht_2_vak_3">2</label><br>
-        <input type="radio" id="eigen_inzicht_3_vak_3" name="eigen_inzicht_vak_3" required> <label for="eigen_inzicht_3_vak_3">3</label><br>
-        <input type="radio" id="eigen_inzicht_4_vak_3" name="eigen_inzicht_vak_3" required> <label for="eigen_inzicht_4_vak_3">4</label><br>
-        <input type="radio" id="eigen_inzicht_5_vak_3" name="eigen_inzicht_vak_3" required> <label for="eigen_inzicht_5_vak_3">5</label><br>
-        <input type="radio" id="eigen_inzicht_6_vak_3" name="eigen_inzicht_vak_3" required> <label for="eigen_inzicht_6_vak_3">6</label><br>
-        <input type="radio" id="eigen_inzicht_7_vak_3" name="eigen_inzicht_vak_3" required> <label for="eigen_inzicht_7_vak_3">7</label><br>
-        <input type="radio" id="eigen_inzicht_8_vak_3" name="eigen_inzicht_vak_3" required> <label for="eigen_inzicht_8_vak_3">8</label><br>
-        <input type="radio" id="eigen_inzicht_9_vak_3" name="eigen_inzicht_vak_3" required> <label for="eigen_inzicht_9_vak_3">9</label><br>
-        <input type="radio" id="eigen_inzicht_10_vak_3" name="eigen_inzicht_vak_3" required> <label for="eigen_inzicht_10_vak_3">10</label><br><br>
+        <label for="eigen-inzicht-vak-3">Mate van eigen inzicht</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="eigen-inzicht-1-vak-3" name="eigen-inzicht-vak-3" required>
+                <label for="eigen-inzicht-1-vak-3">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-2-vak-3" name="eigen-inzicht-vak-3" required>
+                <label for="eigen-inzicht-2-vak-3">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-3-vak-3" name="eigen-inzicht-vak-3" required>
+                <label for="eigen-inzicht-3-vak-3">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-4-vak-3" name="eigen-inzicht-vak-3" required>
+                <label for="eigen-inzicht-4-vak-3">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-5-vak-3" name="eigen-inzicht-vak-3" required>
+                <label for="eigen-inzicht-5-vak-3">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-6-vak-3" name="eigen-inzicht-vak-3" required>
+                <label for="eigen-inzicht-6-vak-3">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-7-vak-3" name="eigen-inzicht-vak-3" required>
+                <label for="eigen-inzicht-7-vak-3">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-8-vak-3" name="eigen-inzicht-vak-3" required>
+                <label for="eigen-inzicht-8-vak-3">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-9-vak-3" name="eigen-inzicht-vak-3" required>
+                <label for="eigen-inzicht-9-vak-3">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-10-vak-3" name="eigen-inzicht-vak-3" required>
+                <label for="eigen-inzicht-10-vak-3">10</label><br><br>
+            </div>
+        </div>
 
         <h2>Vak 4</h2>
 
-        <label for="naam_vak_4">Naam</label><br>
-        <input type="text" id="naam_vak_4" value="Progressive Web Apps" required><br><br>
+        <label for="naam-vak-4">Naam</label><br>
+        <input type="text" id="naam-vak-4" value="Progressive Web Apps" required><br><br>
 
-        <label for="docenten_vak_4">Docenten</label><br>
-        <input type="text" id="docenten_vak_4" value="Declan Rek en Justus Sturkenboom" required><br><br>
+        <label for="docenten-vak-4">Docenten</label><br>
+        <input type="text" id="docenten-vak-4" value="Declan Rek en Justus Sturkenboom" required><br><br>
 
-        <label for="week_vak_4">Week</label><br>
-        <input type="radio" id="week_1_vak_4" name="week_vak_4" required> <label for="week_1_vak_4">1-5</label><br>
-        <input type="radio" id="week_6_vak_4" name="week_vak_4" required> <label for="week_6_vak_4">6</label><br>
-        <input type="radio" id="week_7_9_vak_4" name="week_vak_4" required checked> <label for="week_7_9_vak_4">7-9</label><br>
-        <input type="radio" id="week_10_vak_4" name="week_vak_4" required> <label for="week_10_vak_4">10</label><br>
-        <input type="radio" id="week_11_13_vak_4" name="week_vak_4" required> <label for="week_11_13_vak_4">11-13</label><br>
-        <input type="radio" id="week_15_19_vak_4" name="week_vak_4" required> <label for="week_15_19_vak_4">15-19</label><br><br>
+        <label for="week-vak-4">Week</label><br>
+        <input type="radio" id="week-1-vak-4" name="week-vak-4" required> <label for="week-1-vak-4">1-5</label><br>
+        <input type="radio" id="week-6-vak-4" name="week-vak-4" required> <label for="week-6-vak-4">6</label><br>
+        <input type="radio" id="week-7-9-vak-4" name="week-vak-4" required checked> <label for="week-7-9-vak-4">7-9</label><br>
+        <input type="radio" id="week-10-vak-4" name="week-vak-4" required> <label for="week-10-vak-4">10</label><br>
+        <input type="radio" id="week-11-13-vak-4" name="week-vak-4" required> <label for="week-11-13-vak-4">11-13</label><br>
+        <input type="radio" id="week-15-19-vak-4" name="week-vak-4" required> <label for="week-15-19-vak-4">15-19</label><br><br>
         
-        <label for="lesstof_vak_4">Moeilijkheid van lesstof</label><br>
-        <input type="radio" id="lesstof_1_vak_4" name="lesstof_vak_4" required> <label for="lesstof_1_vak_4">1</label><br>
-        <input type="radio" id="lesstof_2_vak_4" name="lesstof_vak_4" required> <label for="lesstof_2_vak_4">2</label><br>
-        <input type="radio" id="lesstof_3_vak_4" name="lesstof_vak_4" required> <label for="lesstof_3_vak_4">3</label><br>
-        <input type="radio" id="lesstof_4_vak_4" name="lesstof_vak_4" required> <label for="lesstof_4_vak_4">4</label><br>
-        <input type="radio" id="lesstof_5_vak_4" name="lesstof_vak_4" required> <label for="lesstof_5_vak_4">5</label><br>
-        <input type="radio" id="lesstof_6_vak_4" name="lesstof_vak_4" required> <label for="lesstof_6_vak_4">6</label><br>
-        <input type="radio" id="lesstof_7_vak_4" name="lesstof_vak_4" required> <label for="lesstof_7_vak_4">7</label><br>
-        <input type="radio" id="lesstof_8_vak_4" name="lesstof_vak_4" required> <label for="lesstof_8_vak_4">8</label><br>
-        <input type="radio" id="lesstof_9_vak_4" name="lesstof_vak_4" required> <label for="lesstof_9_vak_4">9</label><br>
-        <input type="radio" id="lesstof_10_vak_4" name="lesstof_vak_4" required> <label for="lesstof_10_vak_4">10</label><br><br>
+        <label for="lesstof-vak-4">Moeilijkheid van lesstof</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="lesstof-1-vak-4" name="lesstof-vak-4" required>
+                <label for="lesstof-1-vak-4">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-2-vak-4" name="lesstof-vak-4" required>
+                <label for="lesstof-2-vak-4">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-3-vak-4" name="lesstof-vak-4" required>
+                <label for="lesstof-3-vak-4">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-4-vak-4" name="lesstof-vak-4" required>
+                <label for="lesstof-4-vak-4">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-5-vak-4" name="lesstof-vak-4" required>
+                <label for="lesstof-5-vak-4">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-6-vak-4" name="lesstof-vak-4" required>
+                <label for="lesstof-6-vak-4">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-7-vak-4" name="lesstof-vak-4" required>
+                <label for="lesstof-7-vak-4">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-8-vak-4" name="lesstof-vak-4" required>
+                <label for="lesstof-8-vak-4">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-9-vak-4" name="lesstof-vak-4" required>
+                <label for="lesstof-9-vak-4">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-10-vak-4" name="lesstof-vak-4" required>
+                <label for="lesstof-10-vak-4">10</label><br><br>
+            </div>
+        </div>
 
-        <label for="uitleg_vak_4">Duidelijkheid van uitleg</label><br>
-        <input type="radio" id="uitleg_1_vak_4" name="uitleg_vak_4" required> <label for="uitleg_1_vak_4">1</label><br>
-        <input type="radio" id="uitleg_2_vak_4" name="uitleg_vak_4" required> <label for="uitleg_2_vak_4">2</label><br>
-        <input type="radio" id="uitleg_3_vak_4" name="uitleg_vak_4" required> <label for="uitleg_3_vak_4">3</label><br>
-        <input type="radio" id="uitleg_4_vak_4" name="uitleg_vak_4" required> <label for="uitleg_4_vak_4">4</label><br>
-        <input type="radio" id="uitleg_5_vak_4" name="uitleg_vak_4" required> <label for="uitleg_5_vak_4">5</label><br>
-        <input type="radio" id="uitleg_6_vak_4" name="uitleg_vak_4" required> <label for="uitleg_6_vak_4">6</label><br>
-        <input type="radio" id="uitleg_7_vak_4" name="uitleg_vak_4" required> <label for="uitleg_7_vak_4">7</label><br>
-        <input type="radio" id="uitleg_8_vak_4" name="uitleg_vak_4" required> <label for="uitleg_8_vak_4">8</label><br>
-        <input type="radio" id="uitleg_9_vak_4" name="uitleg_vak_4" required> <label for="uitleg_9_vak_4">9</label><br>
-        <input type="radio" id="uitleg_10_vak_4" name="uitleg_vak_4" required> <label for="uitleg_10_vak_4">10</label><br><br>
+        <label for="uitleg-vak-4">Duidelijkheid van uitleg</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="uitleg-1-vak-4" name="uitleg-vak-4" required>
+                <label for="uitleg-1-vak-4">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-2-vak-4" name="uitleg-vak-4" required>
+                <label for="uitleg-2-vak-4">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-3-vak-4" name="uitleg-vak-4" required>
+                <label for="uitleg-3-vak-4">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-4-vak-4" name="uitleg-vak-4" required>
+                <label for="uitleg-4-vak-4">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-5-vak-4" name="uitleg-vak-4" required>
+                <label for="uitleg-5-vak-4">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-6-vak-4" name="uitleg-vak-4" required>
+                <label for="uitleg-6-vak-4">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-7-vak-4" name="uitleg-vak-4" required>
+                <label for="uitleg-7-vak-4">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-8-vak-4" name="uitleg-vak-4" required>
+                <label for="uitleg-8-vak-4">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-9-vak-4" name="uitleg-vak-4" required>
+                <label for="uitleg-9-vak-4">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-10-vak-4" name="uitleg-vak-4" required>
+                <label for="uitleg-10-vak-4">10</label><br><br>
+            </div>
+        </div>
 
-        <label for="eigen_inzicht_vak_4">Mate van eigen inzicht</label><br>
-        <input type="radio" id="eigen_inzicht_1_vak_4" name="eigen_inzicht_vak_4" required> <label for="eigen_inzicht_1_vak_4">1</label><br>
-        <input type="radio" id="eigen_inzicht_2_vak_4" name="eigen_inzicht_vak_4" required> <label for="eigen_inzicht_2_vak_4">2</label><br>
-        <input type="radio" id="eigen_inzicht_3_vak_4" name="eigen_inzicht_vak_4" required> <label for="eigen_inzicht_3_vak_4">3</label><br>
-        <input type="radio" id="eigen_inzicht_4_vak_4" name="eigen_inzicht_vak_4" required> <label for="eigen_inzicht_4_vak_4">4</label><br>
-        <input type="radio" id="eigen_inzicht_5_vak_4" name="eigen_inzicht_vak_4" required> <label for="eigen_inzicht_5_vak_4">5</label><br>
-        <input type="radio" id="eigen_inzicht_6_vak_4" name="eigen_inzicht_vak_4" required> <label for="eigen_inzicht_6_vak_4">6</label><br>
-        <input type="radio" id="eigen_inzicht_7_vak_4" name="eigen_inzicht_vak_4" required> <label for="eigen_inzicht_7_vak_4">7</label><br>
-        <input type="radio" id="eigen_inzicht_8_vak_4" name="eigen_inzicht_vak_4" required> <label for="eigen_inzicht_8_vak_4">8</label><br>
-        <input type="radio" id="eigen_inzicht_9_vak_4" name="eigen_inzicht_vak_4" required> <label for="eigen_inzicht_9_vak_4">9</label><br>
-        <input type="radio" id="eigen_inzicht_10_vak_4" name="eigen_inzicht_vak_4" required> <label for="eigen_inzicht_10_vak_4">10</label><br><br>
+        <label for="eigen-inzicht-vak-4">Mate van eigen inzicht</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="eigen-inzicht-1-vak-4" name="eigen-inzicht-vak-4" required>
+                <label for="eigen-inzicht-1-vak-4">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-2-vak-4" name="eigen-inzicht-vak-4" required>
+                <label for="eigen-inzicht-2-vak-4">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-3-vak-4" name="eigen-inzicht-vak-4" required>
+                <label for="eigen-inzicht-3-vak-4">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-4-vak-4" name="eigen-inzicht-vak-4" required>
+                <label for="eigen-inzicht-4-vak-4">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-5-vak-4" name="eigen-inzicht-vak-4" required>
+                <label for="eigen-inzicht-5-vak-4">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-6-vak-4" name="eigen-inzicht-vak-4" required>
+                <label for="eigen-inzicht-6-vak-4">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-7-vak-4" name="eigen-inzicht-vak-4" required>
+                <label for="eigen-inzicht-7-vak-4">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-8-vak-4" name="eigen-inzicht-vak-4" required>
+                <label for="eigen-inzicht-8-vak-4">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-9-vak-4" name="eigen-inzicht-vak-4" required>
+                <label for="eigen-inzicht-9-vak-4">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-10-vak-4" name="eigen-inzicht-vak-4" required>
+                <label for="eigen-inzicht-10-vak-4">10</label><br><br>
+            </div>
+        </div>
 
         <h2>Vak 5</h2>
 
-        <label for="naam_vak_5">Naam</label><br>
-        <input type="text" id="naam_vak_5" value="Browser Technologies" required><br><br>
+        <label for="naam-vak-5">Naam</label><br>
+        <input type="text" id="naam-vak-5" value="Browser Technologies" required><br><br>
 
-        <label for="docenten_vak_5">Docenten</label><br>
-        <input type="text" id="docenten_vak_5" value="Peter-Paul Koch en Robert Spier" required><br><br>
+        <label for="docenten-vak-5">Docenten</label><br>
+        <input type="text" id="docenten-vak-5" value="Peter-Paul Koch en Robert Spier" required><br><br>
 
-        <label for="week_vak_5">Week</label><br>
-        <input type="radio" id="week_1_vak_5" name="week_vak_5" required> <label for="week_1_vak_5">1-5</label><br>
-        <input type="radio" id="week_6_vak_5" name="week_vak_5" required> <label for="week_6_vak_5">6</label><br>
-        <input type="radio" id="week_7_9_vak_5" name="week_vak_5" required checked> <label for="week_7_9_vak_5">7-9</label><br>
-        <input type="radio" id="week_10_vak_5" name="week_vak_5" required> <label for="week_10_vak_5">10</label><br>
-        <input type="radio" id="week_11_13_vak_5" name="week_vak_5" required> <label for="week_11_13_vak_5">11-13</label><br>
-        <input type="radio" id="week_15_19_vak_5" name="week_vak_5" required> <label for="week_15_19_vak_5">15-19</label><br><br>
+        <label for="week-vak-5">Week</label><br>
+        <input type="radio" id="week-1-vak-5" name="week-vak-5" required> <label for="week-1-vak-5">1-5</label><br>
+        <input type="radio" id="week-6-vak-5" name="week-vak-5" required> <label for="week-6-vak-5">6</label><br>
+        <input type="radio" id="week-7-9-vak-5" name="week-vak-5" required checked> <label for="week-7-9-vak-5">7-9</label><br>
+        <input type="radio" id="week-10-vak-5" name="week-vak-5" required> <label for="week-10-vak-5">10</label><br>
+        <input type="radio" id="week-11-13-vak-5" name="week-vak-5" required> <label for="week-11-13-vak-5">11-13</label><br>
+        <input type="radio" id="week-15-19-vak-5" name="week-vak-5" required> <label for="week-15-19-vak-5">15-19</label><br><br>
         
-        <label for="lesstof_vak_5">Moeilijkheid van lesstof</label><br>
-        <input type="radio" id="lesstof_1_vak_5" name="lesstof_vak_5" required> <label for="lesstof_1_vak_5">1</label><br>
-        <input type="radio" id="lesstof_2_vak_5" name="lesstof_vak_5" required> <label for="lesstof_2_vak_5">2</label><br>
-        <input type="radio" id="lesstof_3_vak_5" name="lesstof_vak_5" required> <label for="lesstof_3_vak_5">3</label><br>
-        <input type="radio" id="lesstof_4_vak_5" name="lesstof_vak_5" required> <label for="lesstof_4_vak_5">4</label><br>
-        <input type="radio" id="lesstof_5_vak_5" name="lesstof_vak_5" required> <label for="lesstof_5_vak_5">5</label><br>
-        <input type="radio" id="lesstof_6_vak_5" name="lesstof_vak_5" required> <label for="lesstof_6_vak_5">6</label><br>
-        <input type="radio" id="lesstof_7_vak_5" name="lesstof_vak_5" required> <label for="lesstof_7_vak_5">7</label><br>
-        <input type="radio" id="lesstof_8_vak_5" name="lesstof_vak_5" required> <label for="lesstof_8_vak_5">8</label><br>
-        <input type="radio" id="lesstof_9_vak_5" name="lesstof_vak_5" required> <label for="lesstof_9_vak_5">9</label><br>
-        <input type="radio" id="lesstof_10_vak_5" name="lesstof_vak_5" required> <label for="lesstof_10_vak_5">10</label><br><br>
+        <label for="lesstof-vak-5">Moeilijkheid van lesstof</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="lesstof-1-vak-5" name="lesstof-vak-5" required>
+                <label for="lesstof-1-vak-5">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-2-vak-5" name="lesstof-vak-5" required>
+                <label for="lesstof-2-vak-5">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-3-vak-5" name="lesstof-vak-5" required>
+                <label for="lesstof-3-vak-5">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-4-vak-5" name="lesstof-vak-5" required>
+                <label for="lesstof-4-vak-5">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-5-vak-5" name="lesstof-vak-5" required>
+                <label for="lesstof-5-vak-5">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-6-vak-5" name="lesstof-vak-5" required>
+                <label for="lesstof-6-vak-5">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-7-vak-5" name="lesstof-vak-5" required>
+                <label for="lesstof-7-vak-5">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-8-vak-5" name="lesstof-vak-5" required>
+                <label for="lesstof-8-vak-5">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-9-vak-5" name="lesstof-vak-5" required>
+                <label for="lesstof-9-vak-5">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-10-vak-5" name="lesstof-vak-5" required>
+                <label for="lesstof-10-vak-5">10</label><br><br>
+            </div>
+        </div>
 
-        <label for="uitleg_vak_5">Duidelijkheid van uitleg</label><br>
-        <input type="radio" id="uitleg_1_vak_5" name="uitleg_vak_5" required> <label for="uitleg_1_vak_5">1</label><br>
-        <input type="radio" id="uitleg_2_vak_5" name="uitleg_vak_5" required> <label for="uitleg_2_vak_5">2</label><br>
-        <input type="radio" id="uitleg_3_vak_5" name="uitleg_vak_5" required> <label for="uitleg_3_vak_5">3</label><br>
-        <input type="radio" id="uitleg_4_vak_5" name="uitleg_vak_5" required> <label for="uitleg_4_vak_5">4</label><br>
-        <input type="radio" id="uitleg_5_vak_5" name="uitleg_vak_5" required> <label for="uitleg_5_vak_5">5</label><br>
-        <input type="radio" id="uitleg_6_vak_5" name="uitleg_vak_5" required> <label for="uitleg_6_vak_5">6</label><br>
-        <input type="radio" id="uitleg_7_vak_5" name="uitleg_vak_5" required> <label for="uitleg_7_vak_5">7</label><br>
-        <input type="radio" id="uitleg_8_vak_5" name="uitleg_vak_5" required> <label for="uitleg_8_vak_5">8</label><br>
-        <input type="radio" id="uitleg_9_vak_5" name="uitleg_vak_5" required> <label for="uitleg_9_vak_5">9</label><br>
-        <input type="radio" id="uitleg_10_vak_5" name="uitleg_vak_5" required> <label for="uitleg_10_vak_5">10</label><br><br>
+        <label for="uitleg-vak-5">Duidelijkheid van uitleg</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="uitleg-1-vak-5" name="uitleg-vak-5" required>
+                <label for="uitleg-1-vak-5">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-2-vak-5" name="uitleg-vak-5" required>
+                <label for="uitleg-2-vak-5">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-3-vak-5" name="uitleg-vak-5" required>
+                <label for="uitleg-3-vak-5">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-4-vak-5" name="uitleg-vak-5" required>
+                <label for="uitleg-4-vak-5">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-5-vak-5" name="uitleg-vak-5" required>
+                <label for="uitleg-5-vak-5">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-6-vak-5" name="uitleg-vak-5" required>
+                <label for="uitleg-6-vak-5">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-7-vak-5" name="uitleg-vak-5" required>
+                <label for="uitleg-7-vak-5">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-8-vak-5" name="uitleg-vak-5" required>
+                <label for="uitleg-8-vak-5">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-9-vak-5" name="uitleg-vak-5" required>
+                <label for="uitleg-9-vak-5">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-10-vak-5" name="uitleg-vak-5" required>
+                <label for="uitleg-10-vak-5">10</label><br><br>
+            </div>
+        </div>
 
-        <label for="eigen_inzicht_vak_5">Mate van eigen inzicht</label><br>
-        <input type="radio" id="eigen_inzicht_1_vak_5" name="eigen_inzicht_vak_5" required> <label for="eigen_inzicht_1_vak_5">1</label><br>
-        <input type="radio" id="eigen_inzicht_2_vak_5" name="eigen_inzicht_vak_5" required> <label for="eigen_inzicht_2_vak_5">2</label><br>
-        <input type="radio" id="eigen_inzicht_3_vak_5" name="eigen_inzicht_vak_5" required> <label for="eigen_inzicht_3_vak_5">3</label><br>
-        <input type="radio" id="eigen_inzicht_4_vak_5" name="eigen_inzicht_vak_5" required> <label for="eigen_inzicht_4_vak_5">4</label><br>
-        <input type="radio" id="eigen_inzicht_5_vak_5" name="eigen_inzicht_vak_5" required> <label for="eigen_inzicht_5_vak_5">5</label><br>
-        <input type="radio" id="eigen_inzicht_6_vak_5" name="eigen_inzicht_vak_5" required> <label for="eigen_inzicht_6_vak_5">6</label><br>
-        <input type="radio" id="eigen_inzicht_7_vak_5" name="eigen_inzicht_vak_5" required> <label for="eigen_inzicht_7_vak_5">7</label><br>
-        <input type="radio" id="eigen_inzicht_8_vak_5" name="eigen_inzicht_vak_5" required> <label for="eigen_inzicht_8_vak_5">8</label><br>
-        <input type="radio" id="eigen_inzicht_9_vak_5" name="eigen_inzicht_vak_5" required> <label for="eigen_inzicht_9_vak_5">9</label><br>
-        <input type="radio" id="eigen_inzicht_10_vak_5" name="eigen_inzicht_vak_5" required> <label for="eigen_inzicht_10_vak_5">10</label><br><br>
+        <label for="eigen-inzicht-vak-5">Mate van eigen inzicht</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="eigen-inzicht-1-vak-5" name="eigen-inzicht-vak-5" required>
+                <label for="eigen-inzicht-1-vak-5">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-2-vak-5" name="eigen-inzicht-vak-5" required>
+                <label for="eigen-inzicht-2-vak-5">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-3-vak-5" name="eigen-inzicht-vak-5" required>
+                <label for="eigen-inzicht-3-vak-5">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-4-vak-5" name="eigen-inzicht-vak-5" required>
+                <label for="eigen-inzicht-4-vak-5">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-5-vak-5" name="eigen-inzicht-vak-5" required>
+                <label for="eigen-inzicht-5-vak-5">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-6-vak-5" name="eigen-inzicht-vak-5" required>
+                <label for="eigen-inzicht-6-vak-5">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-7-vak-5" name="eigen-inzicht-vak-5" required>
+                <label for="eigen-inzicht-7-vak-5">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-8-vak-5" name="eigen-inzicht-vak-5" required>
+                <label for="eigen-inzicht-8-vak-5">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-9-vak-5" name="eigen-inzicht-vak-5" required>
+                <label for="eigen-inzicht-9-vak-5">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-10-vak-5" name="eigen-inzicht-vak-5" required>
+                <label for="eigen-inzicht-10-vak-5">10</label><br><br>
+            </div>
+        </div>
 
         <h2>Vak 6</h2>
 
-        <label for="naam_vak_6">Naam</label><br>
-        <input type="text" id="naam_vak_6" value="Projectweek 2" required><br><br>
+        <label for="naam-vak-6">Naam</label><br>
+        <input type="text" id="naam-vak-6" value="Projectweek 2" required><br><br>
 
-        <label for="docenten_vak_6">Docenten</label><br>
-        <input type="text" id="docenten_vak_6" value="Joost Faber en Koop Reynders" required><br><br>
+        <label for="docenten-vak-6">Docenten</label><br>
+        <input type="text" id="docenten-vak-6" value="Joost Faber en Koop Reynders" required><br><br>
 
-        <label for="week_vak_6">Week</label><br>
-        <input type="radio" id="week_1_vak_6" name="week_vak_6" required> <label for="week_1_vak_6">1-5</label><br>
-        <input type="radio" id="week_6_vak_6" name="week_vak_6" required> <label for="week_6_vak_6">6</label><br>
-        <input type="radio" id="week_7_9_vak_6" name="week_vak_6" required> <label for="week_7_9_vak_6">7-9</label><br>
-        <input type="radio" id="week_10_vak_6" name="week_vak_6" required checked> <label for="week_10_vak_6">10</label><br>
-        <input type="radio" id="week_11_13_vak_6" name="week_vak_6" required> <label for="week_11_13_vak_6">11-13</label><br>
-        <input type="radio" id="week_15_19_vak_6" name="week_vak_6" required> <label for="week_15_19_vak_6">15-19</label><br><br>
+        <label for="week-vak-6">Week</label><br>
+        <input type="radio" id="week-1-vak-6" name="week-vak-6" required> <label for="week-1-vak-6">1-5</label><br>
+        <input type="radio" id="week-6-vak-6" name="week-vak-6" required> <label for="week-6-vak-6">6</label><br>
+        <input type="radio" id="week-7-9-vak-6" name="week-vak-6" required> <label for="week-7-9-vak-6">7-9</label><br>
+        <input type="radio" id="week-10-vak-6" name="week-vak-6" required checked> <label for="week-10-vak-6">10</label><br>
+        <input type="radio" id="week-11-13-vak-6" name="week-vak-6" required> <label for="week-11-13-vak-6">11-13</label><br>
+        <input type="radio" id="week-15-19-vak-6" name="week-vak-6" required> <label for="week-15-19-vak-6">15-19</label><br><br>
         
-        <label for="lesstof_vak_6">Moeilijkheid van lesstof</label><br>
-        <input type="radio" id="lesstof_1_vak_6" name="lesstof_vak_6" required> <label for="lesstof_1_vak_6">1</label><br>
-        <input type="radio" id="lesstof_2_vak_6" name="lesstof_vak_6" required> <label for="lesstof_2_vak_6">2</label><br>
-        <input type="radio" id="lesstof_3_vak_6" name="lesstof_vak_6" required> <label for="lesstof_3_vak_6">3</label><br>
-        <input type="radio" id="lesstof_4_vak_6" name="lesstof_vak_6" required> <label for="lesstof_4_vak_6">4</label><br>
-        <input type="radio" id="lesstof_5_vak_6" name="lesstof_vak_6" required> <label for="lesstof_5_vak_6">5</label><br>
-        <input type="radio" id="lesstof_6_vak_6" name="lesstof_vak_6" required> <label for="lesstof_6_vak_6">6</label><br>
-        <input type="radio" id="lesstof_7_vak_6" name="lesstof_vak_6" required> <label for="lesstof_7_vak_6">7</label><br>
-        <input type="radio" id="lesstof_8_vak_6" name="lesstof_vak_6" required> <label for="lesstof_8_vak_6">8</label><br>
-        <input type="radio" id="lesstof_9_vak_6" name="lesstof_vak_6" required> <label for="lesstof_9_vak_6">9</label><br>
-        <input type="radio" id="lesstof_10_vak_6" name="lesstof_vak_6" required> <label for="lesstof_10_vak_6">10</label><br><br>
+        <label for="lesstof-vak-6">Moeilijkheid van lesstof</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="lesstof-1-vak-6" name="lesstof-vak-6" required>
+                <label for="lesstof-1-vak-6">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-2-vak-6" name="lesstof-vak-6" required>
+                <label for="lesstof-2-vak-6">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-3-vak-6" name="lesstof-vak-6" required>
+                <label for="lesstof-3-vak-6">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-4-vak-6" name="lesstof-vak-6" required>
+                <label for="lesstof-4-vak-6">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-5-vak-6" name="lesstof-vak-6" required>
+                <label for="lesstof-5-vak-6">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-6-vak-6" name="lesstof-vak-6" required>
+                <label for="lesstof-6-vak-6">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-7-vak-6" name="lesstof-vak-6" required>
+                <label for="lesstof-7-vak-6">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-8-vak-6" name="lesstof-vak-6" required>
+                <label for="lesstof-8-vak-6">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-9-vak-6" name="lesstof-vak-6" required>
+                <label for="lesstof-9-vak-6">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-10-vak-6" name="lesstof-vak-6" required>
+                <label for="lesstof-10-vak-6">10</label><br><br>
+            </div>
+        </div>
 
-        <label for="uitleg_vak_6">Duidelijkheid van uitleg</label><br>
-        <input type="radio" id="uitleg_1_vak_6" name="uitleg_vak_6" required> <label for="uitleg_1_vak_6">1</label><br>
-        <input type="radio" id="uitleg_2_vak_6" name="uitleg_vak_6" required> <label for="uitleg_2_vak_6">2</label><br>
-        <input type="radio" id="uitleg_3_vak_6" name="uitleg_vak_6" required> <label for="uitleg_3_vak_6">3</label><br>
-        <input type="radio" id="uitleg_4_vak_6" name="uitleg_vak_6" required> <label for="uitleg_4_vak_6">4</label><br>
-        <input type="radio" id="uitleg_5_vak_6" name="uitleg_vak_6" required> <label for="uitleg_5_vak_6">5</label><br>
-        <input type="radio" id="uitleg_6_vak_6" name="uitleg_vak_6" required> <label for="uitleg_6_vak_6">6</label><br>
-        <input type="radio" id="uitleg_7_vak_6" name="uitleg_vak_6" required> <label for="uitleg_7_vak_6">7</label><br>
-        <input type="radio" id="uitleg_8_vak_6" name="uitleg_vak_6" required> <label for="uitleg_8_vak_6">8</label><br>
-        <input type="radio" id="uitleg_9_vak_6" name="uitleg_vak_6" required> <label for="uitleg_9_vak_6">9</label><br>
-        <input type="radio" id="uitleg_10_vak_6" name="uitleg_vak_6" required> <label for="uitleg_10_vak_6">10</label><br><br>
+        <label for="uitleg-vak-6">Duidelijkheid van uitleg</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="uitleg-1-vak-6" name="uitleg-vak-6" required>
+                <label for="uitleg-1-vak-6">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-2-vak-6" name="uitleg-vak-6" required>
+                <label for="uitleg-2-vak-6">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-3-vak-6" name="uitleg-vak-6" required>
+                <label for="uitleg-3-vak-6">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-4-vak-6" name="uitleg-vak-6" required>
+                <label for="uitleg-4-vak-6">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-5-vak-6" name="uitleg-vak-6" required>
+                <label for="uitleg-5-vak-6">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-6-vak-6" name="uitleg-vak-6" required>
+                <label for="uitleg-6-vak-6">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-7-vak-6" name="uitleg-vak-6" required>
+                <label for="uitleg-7-vak-6">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-8-vak-6" name="uitleg-vak-6" required>
+                <label for="uitleg-8-vak-6">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-9-vak-6" name="uitleg-vak-6" required>
+                <label for="uitleg-9-vak-6">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-10-vak-6" name="uitleg-vak-6" required>
+                <label for="uitleg-10-vak-6">10</label><br><br>
+            </div>
+        </div>
 
-        <label for="eigen_inzicht_vak_6">Mate van eigen inzicht</label><br>
-        <input type="radio" id="eigen_inzicht_1_vak_6" name="eigen_inzicht_vak_6" required> <label for="eigen_inzicht_1_vak_6">1</label><br>
-        <input type="radio" id="eigen_inzicht_2_vak_6" name="eigen_inzicht_vak_6" required> <label for="eigen_inzicht_2_vak_6">2</label><br>
-        <input type="radio" id="eigen_inzicht_3_vak_6" name="eigen_inzicht_vak_6" required> <label for="eigen_inzicht_3_vak_6">3</label><br>
-        <input type="radio" id="eigen_inzicht_4_vak_6" name="eigen_inzicht_vak_6" required> <label for="eigen_inzicht_4_vak_6">4</label><br>
-        <input type="radio" id="eigen_inzicht_5_vak_6" name="eigen_inzicht_vak_6" required> <label for="eigen_inzicht_5_vak_6">5</label><br>
-        <input type="radio" id="eigen_inzicht_6_vak_6" name="eigen_inzicht_vak_6" required> <label for="eigen_inzicht_6_vak_6">6</label><br>
-        <input type="radio" id="eigen_inzicht_7_vak_6" name="eigen_inzicht_vak_6" required> <label for="eigen_inzicht_7_vak_6">7</label><br>
-        <input type="radio" id="eigen_inzicht_8_vak_6" name="eigen_inzicht_vak_6" required> <label for="eigen_inzicht_8_vak_6">8</label><br>
-        <input type="radio" id="eigen_inzicht_9_vak_6" name="eigen_inzicht_vak_6" required> <label for="eigen_inzicht_9_vak_6">9</label><br>
-        <input type="radio" id="eigen_inzicht_10_vak_6" name="eigen_inzicht_vak_6" required> <label for="eigen_inzicht_10_vak_6">10</label><br><br>
+        <label for="eigen-inzicht-vak-6">Mate van eigen inzicht</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="eigen-inzicht-1-vak-6" name="eigen-inzicht-vak-6" required>
+                <label for="eigen-inzicht-1-vak-6">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-2-vak-6" name="eigen-inzicht-vak-6" required>
+                <label for="eigen-inzicht-2-vak-6">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-3-vak-6" name="eigen-inzicht-vak-6" required>
+                <label for="eigen-inzicht-3-vak-6">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-4-vak-6" name="eigen-inzicht-vak-6" required>
+                <label for="eigen-inzicht-4-vak-6">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-5-vak-6" name="eigen-inzicht-vak-6" required>
+                <label for="eigen-inzicht-5-vak-6">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-6-vak-6" name="eigen-inzicht-vak-6" required>
+                <label for="eigen-inzicht-6-vak-6">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-7-vak-6" name="eigen-inzicht-vak-6" required>
+                <label for="eigen-inzicht-7-vak-6">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-8-vak-6" name="eigen-inzicht-vak-6" required>
+                <label for="eigen-inzicht-8-vak-6">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-9-vak-6" name="eigen-inzicht-vak-6" required>
+                <label for="eigen-inzicht-9-vak-6">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-10-vak-6" name="eigen-inzicht-vak-6" required>
+                <label for="eigen-inzicht-10-vak-6">10</label><br><br>
+            </div>
+        </div>
 
         <h2>Vak 7</h2>
 
-        <label for="naam_vak_7">Naam</label><br>
-        <input type="text" id="naam_vak_7" value="Real-Time Web" required><br><br>
+        <label for="naam-vak-7">Naam</label><br>
+        <input type="text" id="naam-vak-7" value="Real-Time Web" required><br><br>
 
-        <label for="docenten_vak_7">Docenten</label><br>
-        <input type="text" id="docenten_vak_7" value="Justus Sturkenboom en Shyanta Vleugel" required><br><br>
+        <label for="docenten-vak-7">Docenten</label><br>
+        <input type="text" id="docenten-vak-7" value="Justus Sturkenboom en Shyanta Vleugel" required><br><br>
 
-        <label for="week_vak_7">Week</label><br>
-        <input type="radio" id="week_1_vak_7" name="week_vak_7" required> <label for="week_1_vak_7">1-5</label><br>
-        <input type="radio" id="week_6_vak_7" name="week_vak_7" required> <label for="week_6_vak_7">6</label><br>
-        <input type="radio" id="week_7_9_vak_7" name="week_vak_7" required> <label for="week_7_9_vak_7">7-9</label><br>
-        <input type="radio" id="week_10_vak_7" name="week_vak_7" required> <label for="week_10_vak_7">10</label><br>
-        <input type="radio" id="week_11_13_vak_7" name="week_vak_7" required checked> <label for="week_11_13_vak_7">11-13</label><br>
-        <input type="radio" id="week_15_19_vak_7" name="week_vak_7" required> <label for="week_15_19_vak_7">15-19</label><br><br>
+        <label for="week-vak-7">Week</label><br>
+        <input type="radio" id="week-1-vak-7" name="week-vak-7" required> <label for="week-1-vak-7">1-5</label><br>
+        <input type="radio" id="week-6-vak-7" name="week-vak-7" required> <label for="week-6-vak-7">6</label><br>
+        <input type="radio" id="week-7-9-vak-7" name="week-vak-7" required> <label for="week-7-9-vak-7">7-9</label><br>
+        <input type="radio" id="week-10-vak-7" name="week-vak-7" required> <label for="week-10-vak-7">10</label><br>
+        <input type="radio" id="week-11-13-vak-7" name="week-vak-7" required checked> <label for="week-11-13-vak-7">11-13</label><br>
+        <input type="radio" id="week-15-19-vak-7" name="week-vak-7" required> <label for="week-15-19-vak-7">15-19</label><br><br>
         
-        <label for="lesstof_vak_7">Moeilijkheid van lesstof</label><br>
-        <input type="radio" id="lesstof_1_vak_7" name="lesstof_vak_7" required> <label for="lesstof_1_vak_7">1</label><br>
-        <input type="radio" id="lesstof_2_vak_7" name="lesstof_vak_7" required> <label for="lesstof_2_vak_7">2</label><br>
-        <input type="radio" id="lesstof_3_vak_7" name="lesstof_vak_7" required> <label for="lesstof_3_vak_7">3</label><br>
-        <input type="radio" id="lesstof_4_vak_7" name="lesstof_vak_7" required> <label for="lesstof_4_vak_7">4</label><br>
-        <input type="radio" id="lesstof_5_vak_7" name="lesstof_vak_7" required> <label for="lesstof_5_vak_7">5</label><br>
-        <input type="radio" id="lesstof_6_vak_7" name="lesstof_vak_7" required> <label for="lesstof_6_vak_7">6</label><br>
-        <input type="radio" id="lesstof_7_vak_7" name="lesstof_vak_7" required> <label for="lesstof_7_vak_7">7</label><br>
-        <input type="radio" id="lesstof_8_vak_7" name="lesstof_vak_7" required> <label for="lesstof_8_vak_7">8</label><br>
-        <input type="radio" id="lesstof_9_vak_7" name="lesstof_vak_7" required> <label for="lesstof_9_vak_7">9</label><br>
-        <input type="radio" id="lesstof_10_vak_7" name="lesstof_vak_7" required> <label for="lesstof_10_vak_7">10</label><br><br>
+        <label for="lesstof-vak-7">Moeilijkheid van lesstof</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="lesstof-1-vak-7" name="lesstof-vak-7" required>
+                <label for="lesstof-1-vak-7">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-2-vak-7" name="lesstof-vak-7" required>
+                <label for="lesstof-2-vak-7">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-3-vak-7" name="lesstof-vak-7" required>
+                <label for="lesstof-3-vak-7">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-4-vak-7" name="lesstof-vak-7" required>
+                <label for="lesstof-4-vak-7">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-5-vak-7" name="lesstof-vak-7" required>
+                <label for="lesstof-5-vak-7">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-6-vak-7" name="lesstof-vak-7" required>
+                <label for="lesstof-6-vak-7">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-7-vak-7" name="lesstof-vak-7" required>
+                <label for="lesstof-7-vak-7">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-8-vak-7" name="lesstof-vak-7" required>
+                <label for="lesstof-8-vak-7">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-9-vak-7" name="lesstof-vak-7" required>
+                <label for="lesstof-9-vak-7">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-10-vak-7" name="lesstof-vak-7" required>
+                <label for="lesstof-10-vak-7">10</label><br><br>
+            </div>
+        </div>
 
-        <label for="uitleg_vak_7">Duidelijkheid van uitleg</label><br>
-        <input type="radio" id="uitleg_1_vak_7" name="uitleg_vak_7" required> <label for="uitleg_1_vak_7">1</label><br>
-        <input type="radio" id="uitleg_2_vak_7" name="uitleg_vak_7" required> <label for="uitleg_2_vak_7">2</label><br>
-        <input type="radio" id="uitleg_3_vak_7" name="uitleg_vak_7" required> <label for="uitleg_3_vak_7">3</label><br>
-        <input type="radio" id="uitleg_4_vak_7" name="uitleg_vak_7" required> <label for="uitleg_4_vak_7">4</label><br>
-        <input type="radio" id="uitleg_5_vak_7" name="uitleg_vak_7" required> <label for="uitleg_5_vak_7">5</label><br>
-        <input type="radio" id="uitleg_6_vak_7" name="uitleg_vak_7" required> <label for="uitleg_6_vak_7">6</label><br>
-        <input type="radio" id="uitleg_7_vak_7" name="uitleg_vak_7" required> <label for="uitleg_7_vak_7">7</label><br>
-        <input type="radio" id="uitleg_8_vak_7" name="uitleg_vak_7" required> <label for="uitleg_8_vak_7">8</label><br>
-        <input type="radio" id="uitleg_9_vak_7" name="uitleg_vak_7" required> <label for="uitleg_9_vak_7">9</label><br>
-        <input type="radio" id="uitleg_10_vak_7" name="uitleg_vak_7" required> <label for="uitleg_10_vak_7">10</label><br><br>
+        <label for="uitleg-vak-7">Duidelijkheid van uitleg</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="uitleg-1-vak-7" name="uitleg-vak-7" required>
+                <label for="uitleg-1-vak-7">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-2-vak-7" name="uitleg-vak-7" required>
+                <label for="uitleg-2-vak-7">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-3-vak-7" name="uitleg-vak-7" required>
+                <label for="uitleg-3-vak-7">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-4-vak-7" name="uitleg-vak-7" required>
+                <label for="uitleg-4-vak-7">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-5-vak-7" name="uitleg-vak-7" required>
+                <label for="uitleg-5-vak-7">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-6-vak-7" name="uitleg-vak-7" required>
+                <label for="uitleg-6-vak-7">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-7-vak-7" name="uitleg-vak-7" required>
+                <label for="uitleg-7-vak-7">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-8-vak-7" name="uitleg-vak-7" required>
+                <label for="uitleg-8-vak-7">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-9-vak-7" name="uitleg-vak-7" required>
+                <label for="uitleg-9-vak-7">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-10-vak-7" name="uitleg-vak-7" required>
+                <label for="uitleg-10-vak-7">10</label><br><br>
+            </div>
+        </div>
 
-        <label for="eigen_inzicht_vak_7">Mate van eigen inzicht</label><br>
-        <input type="radio" id="eigen_inzicht_1_vak_7" name="eigen_inzicht_vak_7" required> <label for="eigen_inzicht_1_vak_7">1</label><br>
-        <input type="radio" id="eigen_inzicht_2_vak_7" name="eigen_inzicht_vak_7" required> <label for="eigen_inzicht_2_vak_7">2</label><br>
-        <input type="radio" id="eigen_inzicht_3_vak_7" name="eigen_inzicht_vak_7" required> <label for="eigen_inzicht_3_vak_7">3</label><br>
-        <input type="radio" id="eigen_inzicht_4_vak_7" name="eigen_inzicht_vak_7" required> <label for="eigen_inzicht_4_vak_7">4</label><br>
-        <input type="radio" id="eigen_inzicht_5_vak_7" name="eigen_inzicht_vak_7" required> <label for="eigen_inzicht_5_vak_7">5</label><br>
-        <input type="radio" id="eigen_inzicht_6_vak_7" name="eigen_inzicht_vak_7" required> <label for="eigen_inzicht_6_vak_7">6</label><br>
-        <input type="radio" id="eigen_inzicht_7_vak_7" name="eigen_inzicht_vak_7" required> <label for="eigen_inzicht_7_vak_7">7</label><br>
-        <input type="radio" id="eigen_inzicht_8_vak_7" name="eigen_inzicht_vak_7" required> <label for="eigen_inzicht_8_vak_7">8</label><br>
-        <input type="radio" id="eigen_inzicht_9_vak_7" name="eigen_inzicht_vak_7" required> <label for="eigen_inzicht_9_vak_7">9</label><br>
-        <input type="radio" id="eigen_inzicht_10_vak_7" name="eigen_inzicht_vak_7" required> <label for="eigen_inzicht_10_vak_7">10</label><br><br>
+        <label for="eigen-inzicht-vak-7">Mate van eigen inzicht</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="eigen-inzicht-1-vak-7" name="eigen-inzicht-vak-7" required>
+                <label for="eigen-inzicht-1-vak-7">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-2-vak-7" name="eigen-inzicht-vak-7" required>
+                <label for="eigen-inzicht-2-vak-7">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-3-vak-7" name="eigen-inzicht-vak-7" required>
+                <label for="eigen-inzicht-3-vak-7">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-4-vak-7" name="eigen-inzicht-vak-7" required>
+                <label for="eigen-inzicht-4-vak-7">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-5-vak-7" name="eigen-inzicht-vak-7" required>
+                <label for="eigen-inzicht-5-vak-7">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-6-vak-7" name="eigen-inzicht-vak-7" required>
+                <label for="eigen-inzicht-6-vak-7">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-7-vak-7" name="eigen-inzicht-vak-7" required>
+                <label for="eigen-inzicht-7-vak-7">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-8-vak-7" name="eigen-inzicht-vak-7" required>
+                <label for="eigen-inzicht-8-vak-7">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-9-vak-7" name="eigen-inzicht-vak-7" required>
+                <label for="eigen-inzicht-9-vak-7">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-10-vak-7" name="eigen-inzicht-vak-7" required>
+                <label for="eigen-inzicht-10-vak-7">10</label><br><br>
+            </div>
+        </div>
 
         <h2>Vak 8</h2>
 
-        <label for="naam_vak_8">Naam</label><br>
-        <input type="text" id="naam_vak_8" value="Human Centered Design" required><br><br>
+        <label for="naam-vak-8">Naam</label><br>
+        <input type="text" id="naam-vak-8" value="Human Centered Design" required><br><br>
 
-        <label for="docenten_vak_8">Docenten</label><br>
-        <input type="text" id="docenten_vak_8" value="" required><br><br>
+        <label for="docenten-vak-8">Docenten</label><br>
+        <input type="text" id="docenten-vak-8" value="" required><br><br>
 
-        <label for="week_vak_8">Week</label><br>
-        <input type="radio" id="week_1_vak_8" name="week_vak_8" required> <label for="week_1_vak_8">1-5</label><br>
-        <input type="radio" id="week_6_vak_8" name="week_vak_8" required> <label for="week_6_vak_8">6</label><br>
-        <input type="radio" id="week_7_9_vak_8" name="week_vak_8" required> <label for="week_7_9_vak_8">7-9</label><br>
-        <input type="radio" id="week_10_vak_8" name="week_vak_8" required> <label for="week_10_vak_8">10</label><br>
-        <input type="radio" id="week_11_13_vak_8" name="week_vak_8" required checked> <label for="week_11_13_vak_8">11-13</label><br>
-        <input type="radio" id="week_15_19_vak_8" name="week_vak_8" required> <label for="week_15_19_vak_8">15-19</label><br><br>
+        <label for="week-vak-8">Week</label><br>
+        <input type="radio" id="week-1-vak-8" name="week-vak-8" required> <label for="week-1-vak-8">1-5</label><br>
+        <input type="radio" id="week-6-vak-8" name="week-vak-8" required> <label for="week-6-vak-8">6</label><br>
+        <input type="radio" id="week-7-9-vak-8" name="week-vak-8" required> <label for="week-7-9-vak-8">7-9</label><br>
+        <input type="radio" id="week-10-vak-8" name="week-vak-8" required> <label for="week-10-vak-8">10</label><br>
+        <input type="radio" id="week-11-13-vak-8" name="week-vak-8" required checked> <label for="week-11-13-vak-8">11-13</label><br>
+        <input type="radio" id="week-15-19-vak-8" name="week-vak-8" required> <label for="week-15-19-vak-8">15-19</label><br><br>
         
-        <label for="lesstof_vak_8">Moeilijkheid van lesstof</label><br>
-        <input type="radio" id="lesstof_1_vak_8" name="lesstof_vak_8" required> <label for="lesstof_1_vak_8">1</label><br>
-        <input type="radio" id="lesstof_2_vak_8" name="lesstof_vak_8" required> <label for="lesstof_2_vak_8">2</label><br>
-        <input type="radio" id="lesstof_3_vak_8" name="lesstof_vak_8" required> <label for="lesstof_3_vak_8">3</label><br>
-        <input type="radio" id="lesstof_4_vak_8" name="lesstof_vak_8" required> <label for="lesstof_4_vak_8">4</label><br>
-        <input type="radio" id="lesstof_5_vak_8" name="lesstof_vak_8" required> <label for="lesstof_5_vak_8">5</label><br>
-        <input type="radio" id="lesstof_6_vak_8" name="lesstof_vak_8" required> <label for="lesstof_6_vak_8">6</label><br>
-        <input type="radio" id="lesstof_7_vak_8" name="lesstof_vak_8" required> <label for="lesstof_7_vak_8">7</label><br>
-        <input type="radio" id="lesstof_8_vak_8" name="lesstof_vak_8" required> <label for="lesstof_8_vak_8">8</label><br>
-        <input type="radio" id="lesstof_9_vak_8" name="lesstof_vak_8" required> <label for="lesstof_9_vak_8">9</label><br>
-        <input type="radio" id="lesstof_10_vak_8" name="lesstof_vak_8" required> <label for="lesstof_10_vak_8">10</label><br><br>
+        <label for="lesstof-vak-8">Moeilijkheid van lesstof</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="lesstof-1-vak-8" name="lesstof-vak-8" required>
+                <label for="lesstof-1-vak-8">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-2-vak-8" name="lesstof-vak-8" required>
+                <label for="lesstof-2-vak-8">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-3-vak-8" name="lesstof-vak-8" required>
+                <label for="lesstof-3-vak-8">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-4-vak-8" name="lesstof-vak-8" required>
+                <label for="lesstof-4-vak-8">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-5-vak-8" name="lesstof-vak-8" required>
+                <label for="lesstof-5-vak-8">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-6-vak-8" name="lesstof-vak-8" required>
+                <label for="lesstof-6-vak-8">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-7-vak-8" name="lesstof-vak-8" required>
+                <label for="lesstof-7-vak-8">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-8-vak-8" name="lesstof-vak-8" required>
+                <label for="lesstof-8-vak-8">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-9-vak-8" name="lesstof-vak-8" required>
+                <label for="lesstof-9-vak-8">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-10-vak-8" name="lesstof-vak-8" required>
+                <label for="lesstof-10-vak-8">10</label><br><br>
+            </div>
+        </div>
 
-        <label for="uitleg_vak_8">Duidelijkheid van uitleg</label><br>
-        <input type="radio" id="uitleg_1_vak_8" name="uitleg_vak_8" required> <label for="uitleg_1_vak_8">1</label><br>
-        <input type="radio" id="uitleg_2_vak_8" name="uitleg_vak_8" required> <label for="uitleg_2_vak_8">2</label><br>
-        <input type="radio" id="uitleg_3_vak_8" name="uitleg_vak_8" required> <label for="uitleg_3_vak_8">3</label><br>
-        <input type="radio" id="uitleg_4_vak_8" name="uitleg_vak_8" required> <label for="uitleg_4_vak_8">4</label><br>
-        <input type="radio" id="uitleg_5_vak_8" name="uitleg_vak_8" required> <label for="uitleg_5_vak_8">5</label><br>
-        <input type="radio" id="uitleg_6_vak_8" name="uitleg_vak_8" required> <label for="uitleg_6_vak_8">6</label><br>
-        <input type="radio" id="uitleg_7_vak_8" name="uitleg_vak_8" required> <label for="uitleg_7_vak_8">7</label><br>
-        <input type="radio" id="uitleg_8_vak_8" name="uitleg_vak_8" required> <label for="uitleg_8_vak_8">8</label><br>
-        <input type="radio" id="uitleg_9_vak_8" name="uitleg_vak_8" required> <label for="uitleg_9_vak_8">9</label><br>
-        <input type="radio" id="uitleg_10_vak_8" name="uitleg_vak_8" required> <label for="uitleg_10_vak_8">10</label><br><br>
+        <label for="uitleg-vak-8">Duidelijkheid van uitleg</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="uitleg-1-vak-8" name="uitleg-vak-8" required>
+                <label for="uitleg-1-vak-8">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-2-vak-8" name="uitleg-vak-8" required>
+                <label for="uitleg-2-vak-8">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-3-vak-8" name="uitleg-vak-8" required>
+                <label for="uitleg-3-vak-8">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-4-vak-8" name="uitleg-vak-8" required>
+                <label for="uitleg-4-vak-8">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-5-vak-8" name="uitleg-vak-8" required>
+                <label for="uitleg-5-vak-8">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-6-vak-8" name="uitleg-vak-8" required>
+                <label for="uitleg-6-vak-8">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-7-vak-8" name="uitleg-vak-8" required>
+                <label for="uitleg-7-vak-8">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-8-vak-8" name="uitleg-vak-8" required>
+                <label for="uitleg-8-vak-8">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-9-vak-8" name="uitleg-vak-8" required>
+                <label for="uitleg-9-vak-8">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-10-vak-8" name="uitleg-vak-8" required>
+                <label for="uitleg-10-vak-8">10</label><br><br>
+            </div>
+        </div>
 
-        <label for="eigen_inzicht_vak_8">Mate van eigen inzicht</label><br>
-        <input type="radio" id="eigen_inzicht_1_vak_8" name="eigen_inzicht_vak_8" required> <label for="eigen_inzicht_1_vak_8">1</label><br>
-        <input type="radio" id="eigen_inzicht_2_vak_8" name="eigen_inzicht_vak_8" required> <label for="eigen_inzicht_2_vak_8">2</label><br>
-        <input type="radio" id="eigen_inzicht_3_vak_8" name="eigen_inzicht_vak_8" required> <label for="eigen_inzicht_3_vak_8">3</label><br>
-        <input type="radio" id="eigen_inzicht_4_vak_8" name="eigen_inzicht_vak_8" required> <label for="eigen_inzicht_4_vak_8">4</label><br>
-        <input type="radio" id="eigen_inzicht_5_vak_8" name="eigen_inzicht_vak_8" required> <label for="eigen_inzicht_5_vak_8">5</label><br>
-        <input type="radio" id="eigen_inzicht_6_vak_8" name="eigen_inzicht_vak_8" required> <label for="eigen_inzicht_6_vak_8">6</label><br>
-        <input type="radio" id="eigen_inzicht_7_vak_8" name="eigen_inzicht_vak_8" required> <label for="eigen_inzicht_7_vak_8">7</label><br>
-        <input type="radio" id="eigen_inzicht_8_vak_8" name="eigen_inzicht_vak_8" required> <label for="eigen_inzicht_8_vak_8">8</label><br>
-        <input type="radio" id="eigen_inzicht_9_vak_8" name="eigen_inzicht_vak_8" required> <label for="eigen_inzicht_9_vak_8">9</label><br>
-        <input type="radio" id="eigen_inzicht_10_vak_8" name="eigen_inzicht_vak_8" required> <label for="eigen_inzicht_10_vak_8">10</label><br><br>
+        <label for="eigen-inzicht-vak-8">Mate van eigen inzicht</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="eigen-inzicht-1-vak-8" name="eigen-inzicht-vak-8" required>
+                <label for="eigen-inzicht-1-vak-8">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-2-vak-8" name="eigen-inzicht-vak-8" required>
+                <label for="eigen-inzicht-2-vak-8">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-3-vak-8" name="eigen-inzicht-vak-8" required>
+                <label for="eigen-inzicht-3-vak-8">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-4-vak-8" name="eigen-inzicht-vak-8" required>
+                <label for="eigen-inzicht-4-vak-8">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-5-vak-8" name="eigen-inzicht-vak-8" required>
+                <label for="eigen-inzicht-5-vak-8">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-6-vak-8" name="eigen-inzicht-vak-8" required>
+                <label for="eigen-inzicht-6-vak-8">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-7-vak-8" name="eigen-inzicht-vak-8" required>
+                <label for="eigen-inzicht-7-vak-8">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-8-vak-8" name="eigen-inzicht-vak-8" required>
+                <label for="eigen-inzicht-8-vak-8">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-9-vak-8" name="eigen-inzicht-vak-8" required>
+                <label for="eigen-inzicht-9-vak-8">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-10-vak-8" name="eigen-inzicht-vak-8" required>
+                <label for="eigen-inzicht-10-vak-8">10</label><br><br>
+            </div>
+        </div>
 
         <h2>Vak 9</h2>
 
-        <label for="naam_vak_9">Naam</label><br>
-        <input type="text" id="naam_vak_9" value="Human Centered Design" required><br><br>
+        <label for="naam-vak-9">Naam</label><br>
+        <input type="text" id="naam-vak-9" value="Human Centered Design" required><br><br>
 
-        <label for="docenten_vak_9">Docenten</label><br>
-        <input type="text" id="docenten_vak_9" value="" required><br><br>
+        <label for="docenten-vak-9">Docenten</label><br>
+        <input type="text" id="docenten-vak-9" value="" required><br><br>
 
-        <label for="week_vak_9">Week</label><br>
-        <input type="radio" id="week_1_vak_9" name="week_vak_9" required> <label for="week_1_vak_9">1-5</label><br>
-        <input type="radio" id="week_6_vak_9" name="week_vak_9" required> <label for="week_6_vak_9">6</label><br>
-        <input type="radio" id="week_7_9_vak_9" name="week_vak_9" required> <label for="week_7_9_vak_9">7-9</label><br>
-        <input type="radio" id="week_10_vak_9" name="week_vak_9" required> <label for="week_10_vak_9">10</label><br>
-        <input type="radio" id="week_11_13_vak_9" name="week_vak_9" required checked> <label for="week_11_13_vak_9">11-13</label><br>
-        <input type="radio" id="week_15_19_vak_9" name="week_vak_9" required> <label for="week_15_19_vak_9">15-19</label><br><br>
+        <label for="week-vak-9">Week</label><br>
+        <input type="radio" id="week-1-vak-9" name="week-vak-9" required> <label for="week-1-vak-9">1-5</label><br>
+        <input type="radio" id="week-6-vak-9" name="week-vak-9" required> <label for="week-6-vak-9">6</label><br>
+        <input type="radio" id="week-7-9-vak-9" name="week-vak-9" required> <label for="week-7-9-vak-9">7-9</label><br>
+        <input type="radio" id="week-10-vak-9" name="week-vak-9" required> <label for="week-10-vak-9">10</label><br>
+        <input type="radio" id="week-11-13-vak-9" name="week-vak-9" required checked> <label for="week-11-13-vak-9">11-13</label><br>
+        <input type="radio" id="week-15-19-vak-9" name="week-vak-9" required> <label for="week-15-19-vak-9">15-19</label><br><br>
         
-        <label for="lesstof_vak_9">Moeilijkheid van lesstof</label><br>
-        <input type="radio" id="lesstof_1_vak_9" name="lesstof_vak_9" required> <label for="lesstof_1_vak_9">1</label><br>
-        <input type="radio" id="lesstof_2_vak_9" name="lesstof_vak_9" required> <label for="lesstof_2_vak_9">2</label><br>
-        <input type="radio" id="lesstof_3_vak_9" name="lesstof_vak_9" required> <label for="lesstof_3_vak_9">3</label><br>
-        <input type="radio" id="lesstof_4_vak_9" name="lesstof_vak_9" required> <label for="lesstof_4_vak_9">4</label><br>
-        <input type="radio" id="lesstof_5_vak_9" name="lesstof_vak_9" required> <label for="lesstof_5_vak_9">5</label><br>
-        <input type="radio" id="lesstof_6_vak_9" name="lesstof_vak_9" required> <label for="lesstof_6_vak_9">6</label><br>
-        <input type="radio" id="lesstof_7_vak_9" name="lesstof_vak_9" required> <label for="lesstof_7_vak_9">7</label><br>
-        <input type="radio" id="lesstof_8_vak_9" name="lesstof_vak_9" required> <label for="lesstof_8_vak_9">8</label><br>
-        <input type="radio" id="lesstof_9_vak_9" name="lesstof_vak_9" required> <label for="lesstof_9_vak_9">9</label><br>
-        <input type="radio" id="lesstof_10_vak_9" name="lesstof_vak_9" required> <label for="lesstof_10_vak_9">10</label><br><br>
+        <label for="lesstof-vak-9">Moeilijkheid van lesstof</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="lesstof-1-vak-9" name="lesstof-vak-9" required>
+                <label for="lesstof-1-vak-9">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-2-vak-9" name="lesstof-vak-9" required>
+                <label for="lesstof-2-vak-9">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-3-vak-9" name="lesstof-vak-9" required>
+                <label for="lesstof-3-vak-9">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-4-vak-9" name="lesstof-vak-9" required>
+                <label for="lesstof-4-vak-9">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-5-vak-9" name="lesstof-vak-9" required>
+                <label for="lesstof-5-vak-9">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-6-vak-9" name="lesstof-vak-9" required>
+                <label for="lesstof-6-vak-9">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-7-vak-9" name="lesstof-vak-9" required>
+                <label for="lesstof-7-vak-9">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-8-vak-9" name="lesstof-vak-9" required>
+                <label for="lesstof-8-vak-9">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-9-vak-9" name="lesstof-vak-9" required>
+                <label for="lesstof-9-vak-9">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-10-vak-9" name="lesstof-vak-9" required>
+                <label for="lesstof-10-vak-9">10</label><br><br>
+            </div>
+        </div>
 
-        <label for="uitleg_vak_9">Duidelijkheid van uitleg</label><br>
-        <input type="radio" id="uitleg_1_vak_9" name="uitleg_vak_9" required> <label for="uitleg_1_vak_9">1</label><br>
-        <input type="radio" id="uitleg_2_vak_9" name="uitleg_vak_9" required> <label for="uitleg_2_vak_9">2</label><br>
-        <input type="radio" id="uitleg_3_vak_9" name="uitleg_vak_9" required> <label for="uitleg_3_vak_9">3</label><br>
-        <input type="radio" id="uitleg_4_vak_9" name="uitleg_vak_9" required> <label for="uitleg_4_vak_9">4</label><br>
-        <input type="radio" id="uitleg_5_vak_9" name="uitleg_vak_9" required> <label for="uitleg_5_vak_9">5</label><br>
-        <input type="radio" id="uitleg_6_vak_9" name="uitleg_vak_9" required> <label for="uitleg_6_vak_9">6</label><br>
-        <input type="radio" id="uitleg_7_vak_9" name="uitleg_vak_9" required> <label for="uitleg_7_vak_9">7</label><br>
-        <input type="radio" id="uitleg_8_vak_9" name="uitleg_vak_9" required> <label for="uitleg_8_vak_9">8</label><br>
-        <input type="radio" id="uitleg_9_vak_9" name="uitleg_vak_9" required> <label for="uitleg_9_vak_9">9</label><br>
-        <input type="radio" id="uitleg_10_vak_9" name="uitleg_vak_9" required> <label for="uitleg_10_vak_9">10</label><br><br>
+        <label for="uitleg-vak-9">Duidelijkheid van uitleg</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="uitleg-1-vak-9" name="uitleg-vak-9" required>
+                <label for="uitleg-1-vak-9">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-2-vak-9" name="uitleg-vak-9" required>
+                <label for="uitleg-2-vak-9">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-3-vak-9" name="uitleg-vak-9" required>
+                <label for="uitleg-3-vak-9">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-4-vak-9" name="uitleg-vak-9" required>
+                <label for="uitleg-4-vak-9">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-5-vak-9" name="uitleg-vak-9" required>
+                <label for="uitleg-5-vak-9">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-6-vak-9" name="uitleg-vak-9" required>
+                <label for="uitleg-6-vak-9">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-7-vak-9" name="uitleg-vak-9" required>
+                <label for="uitleg-7-vak-9">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-8-vak-9" name="uitleg-vak-9" required>
+                <label for="uitleg-8-vak-9">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-9-vak-9" name="uitleg-vak-9" required>
+                <label for="uitleg-9-vak-9">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-10-vak-9" name="uitleg-vak-9" required>
+                <label for="uitleg-10-vak-9">10</label><br><br>
+            </div>
+        </div>
 
-        <label for="eigen_inzicht_vak_9">Mate van eigen inzicht</label><br>
-        <input type="radio" id="eigen_inzicht_1_vak_9" name="eigen_inzicht_vak_9" required> <label for="eigen_inzicht_1_vak_9">1</label><br>
-        <input type="radio" id="eigen_inzicht_2_vak_9" name="eigen_inzicht_vak_9" required> <label for="eigen_inzicht_2_vak_9">2</label><br>
-        <input type="radio" id="eigen_inzicht_3_vak_9" name="eigen_inzicht_vak_9" required> <label for="eigen_inzicht_3_vak_9">3</label><br>
-        <input type="radio" id="eigen_inzicht_4_vak_9" name="eigen_inzicht_vak_9" required> <label for="eigen_inzicht_4_vak_9">4</label><br>
-        <input type="radio" id="eigen_inzicht_5_vak_9" name="eigen_inzicht_vak_9" required> <label for="eigen_inzicht_5_vak_9">5</label><br>
-        <input type="radio" id="eigen_inzicht_6_vak_9" name="eigen_inzicht_vak_9" required> <label for="eigen_inzicht_6_vak_9">6</label><br>
-        <input type="radio" id="eigen_inzicht_7_vak_9" name="eigen_inzicht_vak_9" required> <label for="eigen_inzicht_7_vak_9">7</label><br>
-        <input type="radio" id="eigen_inzicht_8_vak_9" name="eigen_inzicht_vak_9" required> <label for="eigen_inzicht_8_vak_9">8</label><br>
-        <input type="radio" id="eigen_inzicht_9_vak_9" name="eigen_inzicht_vak_9" required> <label for="eigen_inzicht_9_vak_9">9</label><br>
-        <input type="radio" id="eigen_inzicht_10_vak_9" name="eigen_inzicht_vak_9" required> <label for="eigen_inzicht_10_vak_9">10</label><br><br>
+        <label for="eigen-inzicht-vak-9">Mate van eigen inzicht</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="eigen-inzicht-1-vak-9" name="eigen-inzicht-vak-9" required>
+                <label for="eigen-inzicht-1-vak-9">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-2-vak-9" name="eigen-inzicht-vak-9" required>
+                <label for="eigen-inzicht-2-vak-9">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-3-vak-9" name="eigen-inzicht-vak-9" required>
+                <label for="eigen-inzicht-3-vak-9">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-4-vak-9" name="eigen-inzicht-vak-9" required>
+                <label for="eigen-inzicht-4-vak-9">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-5-vak-9" name="eigen-inzicht-vak-9" required>
+                <label for="eigen-inzicht-5-vak-9">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-6-vak-9" name="eigen-inzicht-vak-9" required>
+                <label for="eigen-inzicht-6-vak-9">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-7-vak-9" name="eigen-inzicht-vak-9" required>
+                <label for="eigen-inzicht-7-vak-9">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-8-vak-9" name="eigen-inzicht-vak-9" required>
+                <label for="eigen-inzicht-8-vak-9">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-9-vak-9" name="eigen-inzicht-vak-9" required>
+                <label for="eigen-inzicht-9-vak-9">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-10-vak-9" name="eigen-inzicht-vak-9" required>
+                <label for="eigen-inzicht-10-vak-9">10</label><br><br>
+            </div>
+        </div>
 
         <h2>Vak 10</h2>
 
-        <label for="naam_vak_10">Naam</label><br>
-        <input type="text" id="naam_vak_10" value="Meesterproef" required><br><br>
+        <label for="naam-vak-10">Naam</label><br>
+        <input type="text" id="naam-vak-10" value="Meesterproef" required><br><br>
 
-        <label for="docenten_vak_10">Docenten</label><br>
-        <input type="text" id="docenten_vak_10" value="" required><br><br>
+        <label for="docenten-vak-10">Docenten</label><br>
+        <input type="text" id="docenten-vak-10" value="" required><br><br>
 
-        <label for="week_vak_10">Week</label><br>
-        <input type="radio" id="week_1_vak_10" name="week_vak_10" required> <label for="week_1_vak_10">1-5</label><br>
-        <input type="radio" id="week_6_vak_10" name="week_vak_10" required> <label for="week_6_vak_10">6</label><br>
-        <input type="radio" id="week_7_9_vak_10" name="week_vak_10" required> <label for="week_7_9_vak_10">7-9</label><br>
-        <input type="radio" id="week_10_vak_10" name="week_vak_10" required> <label for="week_10_vak_10">10</label><br>
-        <input type="radio" id="week_11_13_vak_10" name="week_vak_10" required checked> <label for="week_11_13_vak_10">11-13</label><br>
-        <input type="radio" id="week_15_19_vak_10" name="week_vak_10" required> <label for="week_15_19_vak_10">15-19</label><br><br>
+        <label for="week-vak-10">Week</label><br>
+        <input type="radio" id="week-1-vak-10" name="week-vak-10" required> <label for="week-1-vak-10">1-5</label><br>
+        <input type="radio" id="week-6-vak-10" name="week-vak-10" required> <label for="week-6-vak-10">6</label><br>
+        <input type="radio" id="week-7-9-vak-10" name="week-vak-10" required> <label for="week-7-9-vak-10">7-9</label><br>
+        <input type="radio" id="week-10-vak-10" name="week-vak-10" required> <label for="week-10-vak-10">10</label><br>
+        <input type="radio" id="week-11-13-vak-10" name="week-vak-10" required checked> <label for="week-11-13-vak-10">11-13</label><br>
+        <input type="radio" id="week-15-19-vak-10" name="week-vak-10" required> <label for="week-15-19-vak-10">15-19</label><br><br>
         
-        <label for="lesstof_vak_10">Moeilijkheid van lesstof</label><br>
-        <input type="radio" id="lesstof_1_vak_10" name="lesstof_vak_10" required> <label for="lesstof_1_vak_10">1</label><br>
-        <input type="radio" id="lesstof_2_vak_10" name="lesstof_vak_10" required> <label for="lesstof_2_vak_10">2</label><br>
-        <input type="radio" id="lesstof_3_vak_10" name="lesstof_vak_10" required> <label for="lesstof_3_vak_10">3</label><br>
-        <input type="radio" id="lesstof_4_vak_10" name="lesstof_vak_10" required> <label for="lesstof_4_vak_10">4</label><br>
-        <input type="radio" id="lesstof_5_vak_10" name="lesstof_vak_10" required> <label for="lesstof_5_vak_10">5</label><br>
-        <input type="radio" id="lesstof_6_vak_10" name="lesstof_vak_10" required> <label for="lesstof_6_vak_10">6</label><br>
-        <input type="radio" id="lesstof_7_vak_10" name="lesstof_vak_10" required> <label for="lesstof_7_vak_10">7</label><br>
-        <input type="radio" id="lesstof_8_vak_10" name="lesstof_vak_10" required> <label for="lesstof_8_vak_10">8</label><br>
-        <input type="radio" id="lesstof_9_vak_10" name="lesstof_vak_10" required> <label for="lesstof_9_vak_10">9</label><br>
-        <input type="radio" id="lesstof_10_vak_10" name="lesstof_vak_10" required> <label for="lesstof_10_vak_10">10</label><br><br>
+        <label for="lesstof-vak-10">Moeilijkheid van lesstof</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="lesstof-1-vak-10" name="lesstof-vak-10" required>
+                <label for="lesstof-1-vak-10">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-2-vak-10" name="lesstof-vak-10" required>
+                <label for="lesstof-2-vak-10">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-3-vak-10" name="lesstof-vak-10" required>
+                <label for="lesstof-3-vak-10">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-4-vak-10" name="lesstof-vak-10" required>
+                <label for="lesstof-4-vak-10">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-5-vak-10" name="lesstof-vak-10" required>
+                <label for="lesstof-5-vak-10">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-6-vak-10" name="lesstof-vak-10" required>
+                <label for="lesstof-6-vak-10">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-7-vak-10" name="lesstof-vak-10" required>
+                <label for="lesstof-7-vak-10">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-8-vak-10" name="lesstof-vak-10" required>
+                <label for="lesstof-8-vak-10">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-9-vak-10" name="lesstof-vak-10" required>
+                <label for="lesstof-9-vak-10">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-10-vak-10" name="lesstof-vak-10" required>
+                <label for="lesstof-10-vak-10">10</label><br><br>
+            </div>
+        </div>
 
-        <label for="uitleg_vak_10">Duidelijkheid van uitleg</label><br>
-        <input type="radio" id="uitleg_1_vak_10" name="uitleg_vak_10" required> <label for="uitleg_1_vak_10">1</label><br>
-        <input type="radio" id="uitleg_2_vak_10" name="uitleg_vak_10" required> <label for="uitleg_2_vak_10">2</label><br>
-        <input type="radio" id="uitleg_3_vak_10" name="uitleg_vak_10" required> <label for="uitleg_3_vak_10">3</label><br>
-        <input type="radio" id="uitleg_4_vak_10" name="uitleg_vak_10" required> <label for="uitleg_4_vak_10">4</label><br>
-        <input type="radio" id="uitleg_5_vak_10" name="uitleg_vak_10" required> <label for="uitleg_5_vak_10">5</label><br>
-        <input type="radio" id="uitleg_6_vak_10" name="uitleg_vak_10" required> <label for="uitleg_6_vak_10">6</label><br>
-        <input type="radio" id="uitleg_7_vak_10" name="uitleg_vak_10" required> <label for="uitleg_7_vak_10">7</label><br>
-        <input type="radio" id="uitleg_8_vak_10" name="uitleg_vak_10" required> <label for="uitleg_8_vak_10">8</label><br>
-        <input type="radio" id="uitleg_9_vak_10" name="uitleg_vak_10" required> <label for="uitleg_9_vak_10">9</label><br>
-        <input type="radio" id="uitleg_10_vak_10" name="uitleg_vak_10" required> <label for="uitleg_10_vak_10">10</label><br><br>
+        <label for="uitleg-vak-10">Duidelijkheid van uitleg</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="uitleg-1-vak-10" name="uitleg-vak-10" required>
+                <label for="uitleg-1-vak-10">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-2-vak-10" name="uitleg-vak-10" required>
+                <label for="uitleg-2-vak-10">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-3-vak-10" name="uitleg-vak-10" required>
+                <label for="uitleg-3-vak-10">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-4-vak-10" name="uitleg-vak-10" required>
+                <label for="uitleg-4-vak-10">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-5-vak-10" name="uitleg-vak-10" required>
+                <label for="uitleg-5-vak-10">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-6-vak-10" name="uitleg-vak-10" required>
+                <label for="uitleg-6-vak-10">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-7-vak-10" name="uitleg-vak-10" required>
+                <label for="uitleg-7-vak-10">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-8-vak-10" name="uitleg-vak-10" required>
+                <label for="uitleg-8-vak-10">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-9-vak-10" name="uitleg-vak-10" required>
+                <label for="uitleg-9-vak-10">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-10-vak-10" name="uitleg-vak-10" required>
+                <label for="uitleg-10-vak-10">10</label><br><br>
+            </div>
+        </div>
 
-        <label for="eigen_inzicht_vak_10">Mate van eigen inzicht</label><br>
-        <input type="radio" id="eigen_inzicht_1_vak_10" name="eigen_inzicht_vak_10" required> <label for="eigen_inzicht_1_vak_10">1</label><br>
-        <input type="radio" id="eigen_inzicht_2_vak_10" name="eigen_inzicht_vak_10" required> <label for="eigen_inzicht_2_vak_10">2</label><br>
-        <input type="radio" id="eigen_inzicht_3_vak_10" name="eigen_inzicht_vak_10" required> <label for="eigen_inzicht_3_vak_10">3</label><br>
-        <input type="radio" id="eigen_inzicht_4_vak_10" name="eigen_inzicht_vak_10" required> <label for="eigen_inzicht_4_vak_10">4</label><br>
-        <input type="radio" id="eigen_inzicht_5_vak_10" name="eigen_inzicht_vak_10" required> <label for="eigen_inzicht_5_vak_10">5</label><br>
-        <input type="radio" id="eigen_inzicht_6_vak_10" name="eigen_inzicht_vak_10" required> <label for="eigen_inzicht_6_vak_10">6</label><br>
-        <input type="radio" id="eigen_inzicht_7_vak_10" name="eigen_inzicht_vak_10" required> <label for="eigen_inzicht_7_vak_10">7</label><br>
-        <input type="radio" id="eigen_inzicht_8_vak_10" name="eigen_inzicht_vak_10" required> <label for="eigen_inzicht_8_vak_10">8</label><br>
-        <input type="radio" id="eigen_inzicht_9_vak_10" name="eigen_inzicht_vak_10" required> <label for="eigen_inzicht_9_vak_10">9</label><br>
-        <input type="radio" id="eigen_inzicht_10_vak_10" name="eigen_inzicht_vak_10" required> <label for="eigen_inzicht_10_vak_10">10</label><br><br>
+        <label for="eigen-inzicht-vak-10">Mate van eigen inzicht</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="eigen-inzicht-1-vak-10" name="eigen-inzicht-vak-10" required>
+                <label for="eigen-inzicht-1-vak-10">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-2-vak-10" name="eigen-inzicht-vak-10" required>
+                <label for="eigen-inzicht-2-vak-10">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-3-vak-10" name="eigen-inzicht-vak-10" required>
+                <label for="eigen-inzicht-3-vak-10">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-4-vak-10" name="eigen-inzicht-vak-10" required>
+                <label for="eigen-inzicht-4-vak-10">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-5-vak-10" name="eigen-inzicht-vak-10" required>
+                <label for="eigen-inzicht-5-vak-10">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-6-vak-10" name="eigen-inzicht-vak-10" required>
+                <label for="eigen-inzicht-6-vak-10">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-7-vak-10" name="eigen-inzicht-vak-10" required>
+                <label for="eigen-inzicht-7-vak-10">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-8-vak-10" name="eigen-inzicht-vak-10" required>
+                <label for="eigen-inzicht-8-vak-10">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-9-vak-10" name="eigen-inzicht-vak-10" required>
+                <label for="eigen-inzicht-9-vak-10">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-10-vak-10" name="eigen-inzicht-vak-10" required>
+                <label for="eigen-inzicht-10-vak-10">10</label><br><br>
+            </div>
+        </div>
 
         <h2>Vak 11</h2>
 
-        <label for="naam_vak_11">Naam</label><br>
-        <input type="text" id="naam_vak_11" value="Weekly Nerd" required><br><br>
+        <label for="naam-vak-11">Naam</label><br>
+        <input type="text" id="naam-vak-11" value="Weekly Nerd" required><br><br>
 
-        <label for="docenten_vak_11">Docenten</label><br>
-        <input type="text" id="docenten_vak_11" value="" required><br><br>
+        <label for="docenten-vak-11">Docenten</label><br>
+        <input type="text" id="docenten-vak-11" value="" required><br><br>
 
-        <label for="week_vak_11">Week</label><br>
-        <input type="radio" id="week_1_vak_11" name="week_vak_11" required> <label for="week_1_vak_11">1-5</label><br>
-        <input type="radio" id="week_6_vak_11" name="week_vak_11" required> <label for="week_6_vak_11">6</label><br>
-        <input type="radio" id="week_7_9_vak_11" name="week_vak_11" required> <label for="week_7_9_vak_11">7-9</label><br>
-        <input type="radio" id="week_10_vak_11" name="week_vak_11" required> <label for="week_10_vak_11">10</label><br>
-        <input type="radio" id="week_11_13_vak_11" name="week_vak_11" required> <label for="week_11_13_vak_11">11-13</label><br>
-        <input type="radio" id="week_15_19_vak_11" name="week_vak_11" required checked> <label for="week_15_19_vak_11">15-19</label><br><br>
+        <label for="week-vak-11">Week</label><br>
+        <input type="radio" id="week-1-vak-11" name="week-vak-11" required> <label for="week-1-vak-11">1-5</label><br>
+        <input type="radio" id="week-6-vak-11" name="week-vak-11" required> <label for="week-6-vak-11">6</label><br>
+        <input type="radio" id="week-7-9-vak-11" name="week-vak-11" required> <label for="week-7-9-vak-11">7-9</label><br>
+        <input type="radio" id="week-10-vak-11" name="week-vak-11" required> <label for="week-10-vak-11">10</label><br>
+        <input type="radio" id="week-11-13-vak-11" name="week-vak-11" required> <label for="week-11-13-vak-11">11-13</label><br>
+        <input type="radio" id="week-15-19-vak-11" name="week-vak-11" required checked> <label for="week-15-19-vak-11">15-19</label><br><br>
         
-        <label for="lesstof_vak_11">Moeilijkheid van lesstof</label><br>
-        <input type="radio" id="lesstof_1_vak_11" name="lesstof_vak_11" required> <label for="lesstof_1_vak_11">1</label><br>
-        <input type="radio" id="lesstof_2_vak_11" name="lesstof_vak_11" required> <label for="lesstof_2_vak_11">2</label><br>
-        <input type="radio" id="lesstof_3_vak_11" name="lesstof_vak_11" required> <label for="lesstof_3_vak_11">3</label><br>
-        <input type="radio" id="lesstof_4_vak_11" name="lesstof_vak_11" required> <label for="lesstof_4_vak_11">4</label><br>
-        <input type="radio" id="lesstof_5_vak_11" name="lesstof_vak_11" required> <label for="lesstof_5_vak_11">5</label><br>
-        <input type="radio" id="lesstof_6_vak_11" name="lesstof_vak_11" required> <label for="lesstof_6_vak_11">6</label><br>
-        <input type="radio" id="lesstof_7_vak_11" name="lesstof_vak_11" required> <label for="lesstof_7_vak_11">7</label><br>
-        <input type="radio" id="lesstof_8_vak_11" name="lesstof_vak_11" required> <label for="lesstof_8_vak_11">8</label><br>
-        <input type="radio" id="lesstof_9_vak_11" name="lesstof_vak_11" required> <label for="lesstof_9_vak_11">9</label><br>
-        <input type="radio" id="lesstof_10_vak_11" name="lesstof_vak_11" required> <label for="lesstof_10_vak_11">10</label><br><br>
+        <label for="lesstof-vak-11">Moeilijkheid van lesstof</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="lesstof-1-vak-11" name="lesstof-vak-11" required>
+                <label for="lesstof-1-vak-11">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-2-vak-11" name="lesstof-vak-11" required>
+                <label for="lesstof-2-vak-11">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-3-vak-11" name="lesstof-vak-11" required>
+                <label for="lesstof-3-vak-11">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-4-vak-11" name="lesstof-vak-11" required>
+                <label for="lesstof-4-vak-11">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-5-vak-11" name="lesstof-vak-11" required>
+                <label for="lesstof-5-vak-11">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-6-vak-11" name="lesstof-vak-11" required>
+                <label for="lesstof-6-vak-11">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-7-vak-11" name="lesstof-vak-11" required>
+                <label for="lesstof-7-vak-11">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-8-vak-11" name="lesstof-vak-11" required>
+                <label for="lesstof-8-vak-11">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-9-vak-11" name="lesstof-vak-11" required>
+                <label for="lesstof-9-vak-11">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="lesstof-10-vak-11" name="lesstof-vak-11" required>
+                <label for="lesstof-10-vak-11">10</label><br><br>
+            </div>
+        </div>
 
-        <label for="uitleg_vak_11">Duidelijkheid van uitleg</label><br>
-        <input type="radio" id="uitleg_1_vak_11" name="uitleg_vak_11" required> <label for="uitleg_1_vak_11">1</label><br>
-        <input type="radio" id="uitleg_2_vak_11" name="uitleg_vak_11" required> <label for="uitleg_2_vak_11">2</label><br>
-        <input type="radio" id="uitleg_3_vak_11" name="uitleg_vak_11" required> <label for="uitleg_3_vak_11">3</label><br>
-        <input type="radio" id="uitleg_4_vak_11" name="uitleg_vak_11" required> <label for="uitleg_4_vak_11">4</label><br>
-        <input type="radio" id="uitleg_5_vak_11" name="uitleg_vak_11" required> <label for="uitleg_5_vak_11">5</label><br>
-        <input type="radio" id="uitleg_6_vak_11" name="uitleg_vak_11" required> <label for="uitleg_6_vak_11">6</label><br>
-        <input type="radio" id="uitleg_7_vak_11" name="uitleg_vak_11" required> <label for="uitleg_7_vak_11">7</label><br>
-        <input type="radio" id="uitleg_8_vak_11" name="uitleg_vak_11" required> <label for="uitleg_8_vak_11">8</label><br>
-        <input type="radio" id="uitleg_9_vak_11" name="uitleg_vak_11" required> <label for="uitleg_9_vak_11">9</label><br>
-        <input type="radio" id="uitleg_10_vak_11" name="uitleg_vak_11" required> <label for="uitleg_10_vak_11">10</label><br><br>
+        <label for="uitleg-vak-11">Duidelijkheid van uitleg</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="uitleg-1-vak-11" name="uitleg-vak-11" required>
+                <label for="uitleg-1-vak-11">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-2-vak-11" name="uitleg-vak-11" required>
+                <label for="uitleg-2-vak-11">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-3-vak-11" name="uitleg-vak-11" required>
+                <label for="uitleg-3-vak-11">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-4-vak-11" name="uitleg-vak-11" required>
+                <label for="uitleg-4-vak-11">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-5-vak-11" name="uitleg-vak-11" required>
+                <label for="uitleg-5-vak-11">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-6-vak-11" name="uitleg-vak-11" required>
+                <label for="uitleg-6-vak-11">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-7-vak-11" name="uitleg-vak-11" required>
+                <label for="uitleg-7-vak-11">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-8-vak-11" name="uitleg-vak-11" required>
+                <label for="uitleg-8-vak-11">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-9-vak-11" name="uitleg-vak-11" required>
+                <label for="uitleg-9-vak-11">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="uitleg-10-vak-11" name="uitleg-vak-11" required>
+                <label for="uitleg-10-vak-11">10</label><br><br>
+            </div>
+        </div>
 
-        <label for="eigen_inzicht_vak_11">Mate van eigen inzicht</label><br>
-        <input type="radio" id="eigen_inzicht_1_vak_11" name="eigen_inzicht_vak_11" required> <label for="eigen_inzicht_1_vak_11">1</label><br>
-        <input type="radio" id="eigen_inzicht_2_vak_11" name="eigen_inzicht_vak_11" required> <label for="eigen_inzicht_2_vak_11">2</label><br>
-        <input type="radio" id="eigen_inzicht_3_vak_11" name="eigen_inzicht_vak_11" required> <label for="eigen_inzicht_3_vak_11">3</label><br>
-        <input type="radio" id="eigen_inzicht_4_vak_11" name="eigen_inzicht_vak_11" required> <label for="eigen_inzicht_4_vak_11">4</label><br>
-        <input type="radio" id="eigen_inzicht_5_vak_11" name="eigen_inzicht_vak_11" required> <label for="eigen_inzicht_5_vak_11">5</label><br>
-        <input type="radio" id="eigen_inzicht_6_vak_11" name="eigen_inzicht_vak_11" required> <label for="eigen_inzicht_6_vak_11">6</label><br>
-        <input type="radio" id="eigen_inzicht_7_vak_11" name="eigen_inzicht_vak_11" required> <label for="eigen_inzicht_7_vak_11">7</label><br>
-        <input type="radio" id="eigen_inzicht_8_vak_11" name="eigen_inzicht_vak_11" required> <label for="eigen_inzicht_8_vak_11">8</label><br>
-        <input type="radio" id="eigen_inzicht_9_vak_11" name="eigen_inzicht_vak_11" required> <label for="eigen_inzicht_9_vak_11">9</label><br>
-        <input type="radio" id="eigen_inzicht_10_vak_11" name="eigen_inzicht_vak_11" required> <label for="eigen_inzicht_10_vak_11">10</label><br><br>
+        <label for="eigen-inzicht-vak-11">Mate van eigen inzicht</label><br>
+        <div class="display-flex">
+            <div>
+                <input type="radio" id="eigen-inzicht-1-vak-11" name="eigen-inzicht-vak-11" required>
+                <label for="eigen-inzicht-1-vak-11">1</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-2-vak-11" name="eigen-inzicht-vak-11" required>
+                <label for="eigen-inzicht-2-vak-11">2</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-3-vak-11" name="eigen-inzicht-vak-11" required>
+                <label for="eigen-inzicht-3-vak-11">3</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-4-vak-11" name="eigen-inzicht-vak-11" required>
+                <label for="eigen-inzicht-4-vak-11">4</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-5-vak-11" name="eigen-inzicht-vak-11" required>
+                <label for="eigen-inzicht-5-vak-11">5</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-6-vak-11" name="eigen-inzicht-vak-11" required>
+                <label for="eigen-inzicht-6-vak-11">6</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-7-vak-11" name="eigen-inzicht-vak-11" required>
+                <label for="eigen-inzicht-7-vak-11">7</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-8-vak-11" name="eigen-inzicht-vak-11" required>
+                <label for="eigen-inzicht-8-vak-11">8</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-9-vak-11" name="eigen-inzicht-vak-11" required>
+                <label for="eigen-inzicht-9-vak-11">9</label><br>
+            </div>
+            <div>
+                <input type="radio" id="eigen-inzicht-10-vak-11" name="eigen-inzicht-vak-11" required>
+                <label for="eigen-inzicht-10-vak-11">10</label><br><br>
+            </div>
+        </div>
 
         <input type="submit" value="Submit">
         <input type="reset">
