@@ -7,7 +7,7 @@ import { engine } from 'express-handlebars'
 const app = express()
 
 // Render static files.
-app.use(express.static('public'))
+app.use(express.static('static'))
 
 // Set the view engine to Handlebars.
 app.engine('handlebars', engine())
@@ -25,7 +25,7 @@ app.get('/', (_req, res) => {
 	// if (err) throw err;
 	// let info = JSON.parse(data);
 
-	res.render('home')
+	res.render('index')
 
 	// res.render('home', {
 	// 	eerder_opgeslagen_data: info
@@ -44,5 +44,5 @@ app.post('/', (req, res) => {
 
 	console.log(req.body)
 
-    res.render('home', { resultaten: req.body })	
+    res.render('index', { resultaten: req.body })	
 })
