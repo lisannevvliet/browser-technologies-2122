@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #25167a;
+    font-family: system-ui;
+}
+
+div {
+    background: white;
+    width: 90%;
+    border-radius: 5px;
+    margin: 25px auto;
+    padding: 2.5px 25px 25px 25px;
+}
+
+input[type="text"], input[type="number"] {
+    float: right;
+    width: 50%;
+}
+
+/* Laptop */
+@media only screen and (min-width: 1024px) {
+    div {
+        width: 70%;
+    }
+}
+
+/* Laptop L */
+@media only screen and (min-width: 1440px) {
+    div {
+        width: 50%;
+    }
+}
