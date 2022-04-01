@@ -7,12 +7,19 @@ body {
     font-family: system-ui;
 }
 
-div {
+#form {
     background: white;
     width: 90%;
     border-radius: 5px;
     margin: 25px auto;
     padding: 2.5px 25px 25px 25px;
+}
+
+#weken {
+    position: relative;
+    top: -16px;
+    left: 50%;
+    margin-bottom: -16px;
 }
 
 input[type="text"], input[type="number"] {
