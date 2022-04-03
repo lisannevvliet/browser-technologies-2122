@@ -1,17 +1,19 @@
 // Import Express.
-import express from 'express'
+import express from "express"
 // Import Handlebars.
-import { engine } from 'express-handlebars'
+import { engine } from "express-handlebars"
+// Import fs (file system).
+import fs from "fs"
 
 // Initialise Express.
 const app = express()
 
 // Render static files.
-app.use(express.static('static'))
+app.use(express.static("static"))
 
 // Set the view engine to Handlebars.
-app.engine('handlebars', engine())
-app.set('view engine', 'handlebars')
+app.engine("handlebars", engine())
+app.set("view engine", "handlebars")
 
 // Parse incoming requests.
 app.use(express.urlencoded({ extended: true }))
@@ -20,32 +22,28 @@ app.use(express.urlencoded({ extended: true }))
 app.listen(3000)
 
 // Listen to all GET requests on /.
-app.get('/', (_req, res) => {
-	// fs.readFile('informatie.json', 'utf8', function (err, data) {
-	// if (err) throw err;
-	// let info = JSON.parse(data);
+app.get("/", (_req, res) => {
+	// Path to the default JSON.
+	var path = "static/json/standaard.json"
 
-	res.render('index', { resultaten: {
-		'naam-vak-1': 'Web App From Scratch',
-		'docenten-vak-1': 'Joost Faber en Koop Reynders'
-	}})
+	// If a custom JSON exists, use that path instead.
+	if (fs.existsSync("static/json/informatie.json")) {
+		path = "static/json/informatie.json"
+	}
 
-	// res.render('home', {
-	// 	eerder_opgeslagen_data: info
-	// })
+	// Load the index page with the default or custom JSON.
+	fs.readFile(path, "utf8", function(_err, data) {
+		res.render("index", { resultaten: JSON.parse(data) })
+	})
 })
 
-// let userInput;
-
 // Listen to all POST requests on /.
-app.post('/', (req, res) => {
-	// userInput = JSON.stringify(req.body.naam)
+app.post("/", (req, res) => {
+	// Create or modify a custom JSON. Synchronious so that it does not crash on the first submit.
+	fs.writeFileSync("static/json/informatie.json", JSON.stringify(req.body), "utf8")
 
-	// fs.writeFile('informatie.json', userInput, 'utf8', cb => {
-		// console.log('werk dan');
-	// })
-
-	console.log(req.body)
-
-    res.render('index', { resultaten: req.body })	
+	// Load the index page with the custom JSON.
+	fs.readFile("static/json/informatie.json", "utf8", function(_err, data) {
+		res.render("index", { resultaten: JSON.parse(data) })
+	})
 })
