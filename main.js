@@ -14,7 +14,7 @@ app.engine('handlebars', engine())
 app.set('view engine', 'handlebars')
 
 // Parse incoming requests.
-app.use(express.urlencoded( { extended: true } ))
+app.use(express.urlencoded({ extended: true }))
 
 // Set the port for Express.
 app.listen(3000)
@@ -25,7 +25,10 @@ app.get('/', (_req, res) => {
 	// if (err) throw err;
 	// let info = JSON.parse(data);
 
-	res.render('index')
+	res.render('index', { resultaten: {
+		'naam-vak-1': 'Web App From Scratch',
+		'docenten-vak-1': 'Joost Faber en Koop Reynders'
+	}})
 
 	// res.render('home', {
 	// 	eerder_opgeslagen_data: info
