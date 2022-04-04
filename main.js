@@ -47,3 +47,22 @@ app.post("/", (req, res) => {
 		res.render("index", { resultaten: JSON.parse(data) })
 	})
 })
+
+// Listen to all GET requests on /reset.
+app.get("/reset", (_req, res) => {
+	// Load the index page with the default JSON.
+	fs.readFile("static/json/standaard.json", "utf8", function(_err, data) {
+		res.render("index", { resultaten: JSON.parse(data) })
+	})
+})
+
+// Listen to all POST requests on /reset.
+app.post("/reset", (_req, res) => {
+	// Delete the custom JSON.
+	try { fs.unlinkSync("static/json/informatie.json") } finally { }
+
+	// Load the index page with the default JSON.
+	fs.readFile("static/json/standaard.json", "utf8", function(_err, data) {
+		res.render("index", { resultaten: JSON.parse(data) })
+	})
+})

@@ -27,6 +27,10 @@ input[type="text"], input[type="number"] {
     width: 50%;
 }
 
+button[type="submit"]:nth-child(2) {
+    color: red;
+}
+
 /* Laptop */
 @media only screen and (min-width: 1024px) {
     #form {
