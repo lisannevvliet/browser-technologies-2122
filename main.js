@@ -2,7 +2,6 @@
 const express = require("express")
 // Import Handlebars.
 const handlebars = require("express-handlebars")
-
 // Import fs (file system).
 const fs = require("fs")
 
