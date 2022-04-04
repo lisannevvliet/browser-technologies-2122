@@ -1,9 +1,10 @@
 // Import Express.
-import express from "express"
+const express = require("express")
 // Import Handlebars.
-import { engine } from "express-handlebars"
+const hbs = require("express-handlebars")
+const handlebars = hbs.engine
 // Import fs (file system).
-import fs from "fs"
+const fs = require("fs")
 
 // Initialise Express.
 const app = express()
@@ -12,8 +13,8 @@ const app = express()
 app.use(express.static("static"))
 
 // Set the view engine to Handlebars.
-app.engine("handlebars", engine())
-app.set("view engine", "handlebars")
+app.engine("hbs", handlebars({ helpers: require("./config/handlebars-helpers") }))
+app.set("view engine", "hbs")
 
 // Parse incoming requests.
 app.use(express.urlencoded({ extended: true }))

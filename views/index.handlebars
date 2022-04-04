@@ -12,12 +12,12 @@
         <label for="docenten-vak-1"><strong>Docenten</strong></label> <input type="text" id="docenten-vak-1" name="docenten-vak-1"  value="{{resultaten.docenten-vak-1}}" required><br><br>
         <label for="week-vak-1"><strong>Week</strong></label>
         <div>
-            <input type="radio" id="week-1-vak-1" value="week-1-vak-1" name="week-vak-1" required checked> <label for="week-1-vak-1">1-5</label><br>
-            <input type="radio" id="week-6-vak-1" value="week-6-vak-1" name="week-vak-1" required> <label for="week-6-vak-1">6</label><br>
-            <input type="radio" id="week-7-9-vak-1" value="week-7-9-vak-1" name="week-vak-1" required> <label for="week-7-9-vak-1">7-9</label><br>
-            <input type="radio" id="week-10-vak-1" value="week-10-vak-1" name="week-vak-1" required> <label for="week-10-vak-1">10</label><br>
-            <input type="radio" id="week-11-13-vak-1" value="week-11-13-vak-1" name="week-vak-1" required> <label for="week-11-13-vak-1">11-13</label><br>
-            <input type="radio" id="week-15-19-vak-1" value="week-15-19-vak-1" name="week-vak-1" required> <label for="week-15-19-vak-1">15-19</label><br><br>
+            <input type="radio" id="week-1-5-vak-1" value="week-1-5-vak-1" name="week-vak-1" required {{#ifCond resultaten.week-vak-1 "week-1-5-vak-1"}}checked{{/ifCond}}> <label for="week-1-5-vak-1">1-5</label><br>
+            <input type="radio" id="week-6-vak-1" value="week-6-vak-1" name="week-vak-1" required {{#ifCond resultaten.week-vak-1 "week-6-vak-1"}}checked{{/ifCond}}> <label for="week-6-vak-1">6</label><br>
+            <input type="radio" id="week-7-9-vak-1" value="week-7-9-vak-1" name="week-vak-1" required {{#ifCond resultaten.week-vak-1 "week-7-9-vak-1"}}checked{{/ifCond}}> <label for="week-7-9-vak-1">7-9</label><br>
+            <input type="radio" id="week-10-vak-1" value="week-10-vak-1" name="week-vak-1" required {{#ifCond resultaten.week-vak-1 "week-10-vak-1"}}checked{{/ifCond}}> <label for="week-10-vak-1">10</label><br>
+            <input type="radio" id="week-11-13-vak-1" value="week-11-13-vak-1" name="week-vak-1" required {{#ifCond resultaten.week-vak-1 "week-11-13-vak-1"}}checked{{/ifCond}}> <label for="week-11-13-vak-1">11-13</label><br>
+            <input type="radio" id="week-15-19-vak-1" value="week-15-19-vak-1" name="week-vak-1" required {{#ifCond resultaten.week-vak-1 "week-15-19-vak-1"}}checked{{/ifCond}}> <label for="week-15-19-vak-1">15-19</label><br><br>
         </div>
         <label for="lesstof-vak-1"><strong>Moeilijkheid van lesstof</strong> (1-10)</label> <input type="number" id="lesstof-vak-1" name="lesstof-vak-1" value="{{resultaten.lesstof-vak-1}}" min="1" max="10"><br><br>
         <label for="uitleg-vak-1"><strong>Duidelijkheid van uitleg</strong> (1-10)</label> <input type="number" id="uitleg-vak-1" name="uitleg-vak-1" value="{{resultaten.uitleg-vak-1}}" min="1" max="10"><br><br>
