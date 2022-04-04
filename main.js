@@ -19,8 +19,8 @@ app.set("view engine", "handlebars")
 // Parse incoming requests.
 app.use(express.urlencoded({ extended: true }))
 
-// Set the port for Express.
-app.listen(3000)
+// Set and log the port for Express.
+app.listen(3000, () => { console.log("Express running at http://localhost:3000/.") })
 
 // Listen to all GET requests on /.
 app.get("/", (_req, res) => {
