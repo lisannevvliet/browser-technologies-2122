@@ -5,6 +5,7 @@
 body {
     background: #25167a;
     font-family: system-ui;
+    overflow-x: hidden;
 }
 
 #form {
