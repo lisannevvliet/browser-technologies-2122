@@ -1,3 +1,5 @@
+// Import Dotenv.
+require('dotenv').config()
 // Import Express.
 const express = require("express")
 // Import Handlebars.
@@ -19,7 +21,7 @@ app.set("view engine", "handlebars")
 app.use(express.urlencoded({ extended: true }))
 
 // Set and log the port for Express.
-app.listen(3000, () => { console.log("Express running at http://localhost:3000/.") })
+app.listen(process.env.PORT, () => { console.log(`Express running at http://localhost:${process.env.PORT}.`) })
 
 // Listen to all GET requests on /.
 app.get("/", (_req, res) => {
