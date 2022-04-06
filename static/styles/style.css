@@ -29,8 +29,27 @@ input[type="text"], input[type="number"] {
     padding: 5px;
 }
 
-button[type="submit"]:nth-child(2) {
-    color: red;
+button[type="submit"] {
+    font-weight: bold;
+    background: #e8e8e8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+button[type="submit"]:hover {
+    background: #d1d1d1;
+}
+
+button[type="submit"]:nth-child(1) {
+    color: white;
+    background-color: red;
+    margin-top: 10px;
+}
+
+button[type="submit"]:nth-child(1):hover {
+    background-color: #e80000;
 }
 
 /* Laptop */
