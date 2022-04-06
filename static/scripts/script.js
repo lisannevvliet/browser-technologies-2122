@@ -22,4 +22,3 @@ elements.forEach((element, index) => {
         element.addEventListener("keyup", validate)
     }
 })
-
