@@ -25,6 +25,8 @@ form div {
 
 input[type="text"], input[type="number"] {
     background: #fafafa;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
     float: right;
     width: 50%;
     padding: 5px;
