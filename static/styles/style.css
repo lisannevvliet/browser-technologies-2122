@@ -26,6 +26,7 @@ form div {
 input[type="text"], input[type="number"] {
     float: right;
     width: 50%;
+    padding: 5px;
 }
 
 button[type="submit"]:nth-child(2) {
