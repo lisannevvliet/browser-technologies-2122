@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lisannevvliet/browser-technologies-2122.git"
+    "url": "git+https://github.com/lisannevvliet/enquete-minor-web.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lisannevvliet/browser-technologies-2122/issues"
+    "url": "https://github.com/lisannevvliet/enquete-minor-web/issues"
   },
-  "homepage": "https://github.com/lisannevvliet/browser-technologies-2122#readme",
+  "homepage": "https://github.com/lisannevvliet/enquete-minor-web#readme",
   "dependencies": {
     "body-parser": "^1.19.2",
     "dotenv": "^16.0.0",
