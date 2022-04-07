@@ -11,7 +11,7 @@
 https://enquete-minor-web.herokuapp.com/
 
 ## Functionele schets
-(Wireflow) schets van de functionaliteit.
+![](https://user-images.githubusercontent.com/90243819/162234557-d805b4a5-3b3f-4fe6-b333-3e53899b16bb.jpg)
 
 De core functionality van de [enquête over de minor Web Design & Development](https://github.com/cmda-minor-web/browser-technologies-2122/blob/main/usecases/Usecase-enquete.md) is het volledig kunnen invullen en versturen van de enquête. De functional/reliable laag is enkel de HTML, de usable laag is de HTML én CSS (die het visueel aantrekkelijk maakt) en de pleasurable laag is de HTML, CSS én JavaScript (die voor real-time input validation, opslag in de localStorage en de progress bar zorgt).
 
