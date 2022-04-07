@@ -41,7 +41,15 @@ elements.forEach((element, index) => {
     }
 })
 
-// Clear the localStorage upon a click on the "Reset" button.
-$("#reset").addEventListener("click", function() {
+// Clear the localStorage.
+function clear() {
     localStorage.clear()
+}
+
+// List of all submit buttons.
+const buttons = document.querySelectorAll("button[type=\"submit\"]")
+
+// Clear the localStorage upon a click on one of the submit buttons.
+buttons.forEach((element) => {
+    element.addEventListener("click", clear)
 })
