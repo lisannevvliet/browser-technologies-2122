@@ -26,3 +26,5 @@ Om ervoor te zorgen dat de website er op zo oud mogelijke browsers goed uit ziet
 
 ## Testverslag
 Naast de algemene werking van de website heb ik de features required, min en max en localStorage onderzocht. Op de vier browsers worden alle features ondersteund en werkt de website zoals behoren. Tijdens het testen heb ik CSS, JavaScript en localStorage uitgezet. Zonder CSS gaat er geen core functionality verloren (zie de onderstaande screenshot), maar de real-time input validation werkt niet meer (omdat hierbij een outline wordt toegevoegd). Zonder JavaScript werkt de real-time input validation, opslag in de localStorage en de progress bar niet meer. Omdat de lege progress bar transparant is en het pas wordt gevuld in de JavaScript, lijkt het alsof er geen progress bar is. Zonder de real-time input validation en opslag in de localStorage (wat afhankelijk is van JavaScript) kan de gebruiker alsnog de enquête invullen. Als de browser geen localStorage ondersteund of dit uitgezet wordt, worden de JavaScript functies m.b.t. localStorage overgeslagen.
+
+![](https://user-images.githubusercontent.com/90243819/162227569-803a6fcc-5356-4759-9c71-08edc3ed5347.png)
