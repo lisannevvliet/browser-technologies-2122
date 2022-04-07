@@ -23,15 +23,20 @@ body {
     border-radius: 5px;
 }
 
-form div {
-    position: relative;
-    top: -16px;
-    left: 50%;
-    margin-bottom: -16px;
+div input {
+    float: left;
+}
+
+form div label {
+    margin-left: 5px;
+}
+
+label {
+    float: left;
+    width: 50%;
 }
 
 input[type="text"], input[type="number"] {
-    float: right;
     width: 50%;
 }
 
