@@ -27,7 +27,7 @@ app.listen(process.env.PORT, () => { console.log(`Express running at http://loca
 app.get("/", (_req, res) => {
 	// Load the index page with the JSON.
 	fs.readFile("static/json/informatie.json", "utf8", function(_err, data) {
-		res.render("index", { resultaten: JSON.parse(data) })
+		res.render("index", { resultaten: JSON.parse(data), sent: false })
 	})
 })
 
@@ -36,9 +36,9 @@ app.post("/", (req, res) => {
 	// Overwrite the JSON with the custom values. Synchronious so that it does not crash on the first submit.
 	fs.writeFileSync("static/json/informatie.json", JSON.stringify(req.body))
 
-	// Load the index page with the custom JSON.
+	// Load the index page with the custom JSON and show the message "Enquête is verstuurd!".
 	fs.readFile("static/json/informatie.json", "utf8", function(_err, data) {
-		res.render("index", { resultaten: JSON.parse(data) })
+		res.render("index", { resultaten: JSON.parse(data), sent: true })
 	})
 })
 

@@ -16,6 +16,13 @@ body {
     padding: 2.5px 25px 25px 25px;
 }
 
+#sent {
+    background: #cde4cd;
+    padding: 10px 10px 10px 25px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
 form div {
     position: relative;
     top: -16px;

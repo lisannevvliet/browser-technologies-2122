@@ -1,5 +1,12 @@
 <div id="form">
-    <h1>Enquête Minor Web Design & Development</h1>
+    <h1>Enquête minor Web Design & Development</h1>
+    
+    {{#if sent}}
+        <div id="sent">
+            <p>Enquête is verstuurd!</p>
+        </div>
+    {{/if}}
+    
     <form action="/" method="post">
         <h2>Student</h2>
         <label for="naam"><strong>Naam</strong></label> <input type="text" id="naam" name="naam" value="{{resultaten.naam}}" required><br><br>
