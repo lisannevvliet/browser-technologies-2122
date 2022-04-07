@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
     background: #25167a;
     font-family: system-ui;
-    overflow-x: hidden;
 }
 
 #form {
