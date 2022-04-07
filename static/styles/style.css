@@ -41,8 +41,9 @@ input[type="number"].red {
 }
 
 button[type="submit"] {
+    color: white;
     font-weight: bold;
-    background: #e8e8e8;
+    background: grey;
     transition: background .3s ease;
     border: none;
     border-radius: 5px;
@@ -51,19 +52,18 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background: #d1d1d1;
+    background: #6b6b6b;
     transition: background .3s ease;
 }
 
 button[type="submit"]:nth-child(1) {
-    color: white;
     background: red;
     transition: background .3s ease;
     margin-top: 10px;
 }
 
 button[type="submit"]:nth-child(1):hover {
-    background: #e80000;
+    background: #d50000;
     transition: background .3s ease;
 }
 
