@@ -1,8 +1,3 @@
-// Return the Element object of the corresponding element.
-function $(element) {
-    return document.querySelector(element)
-}
-
 // Add a red outline if the number entered is not between 1 and 10.
 function validate() {
     if (this.value != "" && (this.value < 1 || this.value > 10)) {
