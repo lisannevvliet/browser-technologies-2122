@@ -8,7 +8,7 @@
 - [Testverslag](#testverslag)
 
 ## Demo
-https://enquete-minor-web.herokuapp.com/
+https://enquete-minor-web.onrender.com
 
 ## Functionele schets
 ![](https://user-images.githubusercontent.com/90243819/162234557-d805b4a5-3b3f-4fe6-b333-3e53899b16bb.jpg)
